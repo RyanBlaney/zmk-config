@@ -5,6 +5,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+
+#include "../include/mouse_keys.h"
+#include "../include/mouse_keys.dtsi"
+
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
@@ -111,11 +115,18 @@
 
         mouse_layer {
             bindings = <
-        bindings = <
-                &trans  &trans  &trans  &trans  &trans  &trans  &kp BTN1  &mm 0 1 1  &kp BTN2  &trans
-                &ms -1  &trans  &ms 1  &trans  &trans  &trans  &mm -1 0 1  &mm 0 1 1  &mm 1 0 1  &mm 0 -1 1
-                &trans  &trans  &trans  &trans  &trans  &trans  &ms -1  &mm 0 -1 1  &ms 1  &trans
-                &trans  &trans  &trans  &trans
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│          │          │          │          │          │   │          │          │          │          │          │
+           &trans    &trans      &trans     &trans      &trans         &trans     U_BTN1    U_WH_U     U_BTN2    &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│Sens Down │ Mouse 2  │ Sens Up  │ Mouse 1  │          │   │          │          │          │          │          │
+           &trans      U_BTN2     &trans      U_BTN1    &trans          &trans     U_MS_L     U_MS_D     U_MS_U     U_MS_R 
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &trans     &trans     &trans     &trans     &trans         &trans     &trans   U_WH_D      &trans      &trans
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                             &trans     &trans         &trans     &trans
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
     };
