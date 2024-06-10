@@ -53,7 +53,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &lt 3 B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 TAB   &kp ENTER     &kp SPACE  &lt 1 BSPC
+                                            &lt 2 TAB   &kp SPACE     &kp ENTER  &lt 1 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -111,18 +111,15 @@
 
         mouse_layer {
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans    &trans      &trans     &trans      &trans         &trans     &kp BTN1   &mm 0 1 1  &kp BTN2   &trans
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│Sens Down │ Mouse 2  │ Sens Up  │ Mouse 1  │          │   │          │          │          │          │          │
-           &ms -1     &trans     &ms 1     &trans     &trans          &trans     &mm -1 0 1 &mm 0 1 1  &mm 1 0 1  &mm 0 -1 1
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans      &ms -1     &mm 0 -1 1 &ms 1      &trans
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+        bindings = <
+                // Top row
+                &trans  &trans  &trans  &trans  &trans    &trans  &kp BTN1  &mm 0 1 1  &kp BTN2  &trans
+                // Home row
+                &ms -1  &trans  &ms 1  &trans  &trans    &trans  &mm -1 0 1  &mm 0 1 1  &mm 1 0 1  &mm 0 -1 1
+                // Bottom row
+                &trans  &trans  &trans  &trans  &trans    &trans  &ms -1  &mm 0 -1 1  &ms 1  &trans
+                // Thumb keys
+                &trans  &trans  &trans  &trans
             >;
         };
     };
