@@ -18,30 +18,37 @@
 #define BLUETOOTH 3
 #define MOUSE 4
 
-&key_repeat {
-    compatible = "zmk,behavior-key-repeat";
-    label = "Key Repeat";
-    repeat-delay-ms = <100>;  // Adjust as necessary
-    repeat-rate-ms = <50>;    // Adjust as necessary
-};
 
-&ht {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    flavor = "tap-preferred";
-    tapping-term-ms = <220>;
-    quick-tap-ms = <100>;
-    require-prior-idle-ms = <100>;
-    bindings = <&kp>, <&kp>;
-};
 
-&conditional_layers {
-    compatible = "zmk,conditional-layers";
-    tri_layer {
-        if-layers = <1 2>;
-        then-layer = <3>;
+
+/ {
+    behaviors {
+        ht: hold_tap {
+            label = "hold_tap";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <220>;
+            quick-tap-ms = <150>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+        };
     };
-};
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+
+    key_repeat: key_repeat {
+        compatible = "zmk,behavior-key-repeat";
+        label = "Key Repeat";
+        repeat-delay-ms = <100>;  // Adjust as necessary
+        repeat-rate-ms = <50>;    // Adjust as necessary
+    };
 
     keymap {
         compatible = "zmk,keymap";
