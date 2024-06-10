@@ -18,7 +18,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <100>;
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
@@ -109,7 +109,7 @@
            &trans    &trans      &trans     &trans      &trans         &trans    &mkp LCLK   &trans   &mkp RCLK  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│Sens Down │ Mouse 2  │ Sens Up  │ Mouse 1  │          │   │          │          │          │          │          │
-           &trans     &mkp RCLK    &trans     &mkp LCLK   &trans          &trans     &trans     &trans     &trans     &trans 
+           &trans   &mkp RCLK   &trans    &mkp LCLK   &trans         &trans &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP &mmv MOVE_RIGHT 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &trans         &trans     &trans   &trans      &trans      &trans
