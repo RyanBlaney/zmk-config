@@ -43,7 +43,7 @@
         };
     };
 
-    key_repeat: key_repeat {
+    key_repeat {
         compatible = "zmk,behavior-key-repeat";
         label = "Key Repeat";
         repeat-delay-ms = <100>;  // Adjust as necessary
