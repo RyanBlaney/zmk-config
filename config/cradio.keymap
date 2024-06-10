@@ -24,7 +24,6 @@
 / {
     behaviors {
         ht: hold_tap {
-            label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -48,6 +47,7 @@
         label = "Key Repeat";
         repeat-delay-ms = <100>;  // Adjust as necessary
         repeat-rate-ms = <50>;    // Adjust as necessary
+        usage-pages = <0x07>;   
     };
 
     keymap {
