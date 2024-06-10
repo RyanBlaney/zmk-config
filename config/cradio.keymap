@@ -53,13 +53,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ /        │  7       │  8       │  9       │  =       │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp FSLH    &kp N1     &kp N2     &kp N3     &kp EQUAL     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
+            &kp FSLH    &kp N7     &kp N8     &kp N9     &kp EQUAL     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ *        │  4       │  5       │  6       │  -       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
             &kp ASTRK    &kp N4     &kp N5     &kp N6     &kp MINUS     &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ 0        │  1       │  2       │  3       │  +       │   │  INSERT  │  DELETE  │ ESCAPE   │          │          │
-           &kp N0     &kp N7     &kp N8     &kp N9     &kp PLUS       &kp INSERT &kp DELETE &kp ESC     &trans     &trans
+           &kp N0     &kp N1     &kp N2     &kp N3     &kp PLUS       &kp INSERT &kp DELETE &kp ESC     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
