@@ -60,7 +60,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │BACKSPACE │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &lt BLUETOOTH B  &kp N      &kp M   &kp COMMA  &key_repeat  &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt SYMBOL TAB  &kp SPACE &lt MOUSE ENTER  &lt NUMBER BSPC
+                                           &lt SYMBOL TAB &lt NAV SPACE &lt MOUSE ENTER  &lt NUMBER BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
