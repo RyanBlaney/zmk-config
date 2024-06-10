@@ -58,7 +58,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │BACKSPACE │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &lt BLUETOOTH B  &kp N      &kp M   &kp COMMA  &key_repeat  &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt SYMBOL TAB  &kp SPACE   &lt MOUSE ENTER  &lt NUMBER BSPC
+                                            &lt SYMBOL TAB  &kp SPACE &lt MOUSE ENTER  &lt NUMBER BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -118,7 +118,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans    &trans      &trans     &trans      &trans         &trans    &mkp LCLK  U_WH_U    &mkp RCLK  &trans
+           &trans    &trans      &trans     &trans      &trans         &kp D    &mkp LCLK  U_WH_U    &mkp RCLK  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│Sens Down │ Mouse 2  │ Sens Up  │ Mouse 1  │          │   │          │          │          │          │          │
            &trans    &mkp RCLK   &trans    &mkp LCLK   &trans         &trans     U_MS_L     U_MS_D     U_MS_U     U_MS_R 
