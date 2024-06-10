@@ -12,30 +12,36 @@
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
+#define DEFAULT 0
+#define NUMBER 1
+#define SYMBOL 2
+#define BLUETOOTH 3
+#define MOUSE 4
+
 &key_repeat {
-  usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
+    compatible = "zmk,behavior-key-repeat";
+    label = "Key Repeat";
+    repeat-delay-ms = <100>;  // Adjust as necessary
+    repeat-rate-ms = <50>;    // Adjust as necessary
 };
 
-/ {
-    behaviors {
-        ht: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <100>;
-            require-prior-idle-ms = <100>;
-            bindings = <&kp>, <&kp>;
-        };
-    };
+&ht {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <220>;
+    quick-tap-ms = <100>;
+    require-prior-idle-ms = <100>;
+    bindings = <&kp>, <&kp>;
+};
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
+&conditional_layers {
+    compatible = "zmk,conditional-layers";
+    tri_layer {
+        if-layers = <1 2>;
+        then-layer = <3>;
     };
+};
 
     keymap {
         compatible = "zmk,keymap";
@@ -49,9 +55,9 @@
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │BACKSPACE │ / ?      │
-            &kp Z      &kp X      &kp C      &kp V      &lt 3 B          &kp N      &kp M   &kp COMMA  &kp BSPC    &kp FSLH
+            &kp Z      &kp X      &kp C      &kp V      &lt BLUETOOTH B  &kp N      &kp M   &kp COMMA  &kp &key_repeat    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 TAB   &kp SPACE     &lt 4 ENTER  &lt 1 &key_repeat
+                                            &lt SYMBOL TAB  &kp SPACE   &lt MOUSE ENTER  &lt NUMBER BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
