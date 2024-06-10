@@ -71,11 +71,11 @@
         //│ /        │  7       │  8       │  9       │  =       │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
             &kp FSLH    &kp N7     &kp N8     &kp N9     &kp EQUAL     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ *        │  4       │  5       │  6       │  -       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
+        //│ 0        │  4       │  5       │  6       │  -       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
             &kp ASTRK  &kp N4     &kp N5   &kp N6      &kp MINUS     &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ 0        │  1       │  2       │  3       │  +       │   │  INSERT  │  DELETE  │ ESCAPE   │          │          │
-           &kp N0     &kp N1     &kp N2     &kp N3     &kp PLUS       &kp INSERT &kp DELETE &kp ESC     &trans     &trans
+        //│ *        │  1       │  2       │  3       │  +       │   │  INSERT  │  DELETE  │ ESCAPE   │  ,       │  .       │
+           &kp N0     &kp N1     &kp N2     &kp N3     &kp PLUS       &kp INSERT &kp DELETE &kp ESC    &kp COMMA  &kp DOT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -120,13 +120,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans    &trans      &trans     &trans      &trans         &trans    &mkp LCLK  U_WH_U    &mkp RCLK  &trans
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│Sens Down │ Mouse 2  │ Sens Up  │ Mouse 1  │          │   │          │          │          │          │          │
-           &trans    &mkp RCLK   &trans    &mkp LCLK   &trans         &trans     U_MS_L     U_MS_D     U_MS_U     U_MS_R 
+           &trans     &trans     &trans     &trans     &trans         &trans     &mkp LCLK  U_WH_U     &mkp RCLK  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &trans    U_WH_D     &trans      &trans
+           &trans     &trans     &trans     &trans     &mkp LCLK      &trans     U_MS_L     U_MS_D     U_MS_U     U_MS_R 
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+           &trans     &trans     &trans     &trans     &mkp RCLK      &trans     &trans     U_WH_D     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
