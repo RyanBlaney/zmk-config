@@ -19,6 +19,9 @@
 #define MOUSE 4
 
 
+&key_repeat {
+    usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
+};
 
 
 / {
@@ -29,7 +32,6 @@
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
             quick-tap-ms = <150>;
-            global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
     };
@@ -40,14 +42,6 @@
             if-layers = <1 2>;
             then-layer = <3>;
         };
-    };
-
-    key_repeat {
-        compatible = "zmk,behavior-key-repeat";
-        label = "Key Repeat";
-        repeat-delay-ms = <100>;  // Adjust as necessary
-        repeat-rate-ms = <50>;    // Adjust as necessary
-        usage-pages = <0x07>;   
     };
 
     keymap {
