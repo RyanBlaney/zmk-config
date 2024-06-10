@@ -5,6 +5,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#include <dt-bindings/zmk/mouse.h>
+
 #include "mouse.dtsi"
 
 
@@ -118,7 +120,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans    &trans      &trans     &trans      &trans         &kp D    &mkp LCLK  U_WH_U    &mkp RCLK  &trans
+           &trans    &trans      &trans     &trans      &trans         &trans    &mkp LCLK  U_WH_U    &mkp RCLK  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│Sens Down │ Mouse 2  │ Sens Up  │ Mouse 1  │          │   │          │          │          │          │          │
            &trans    &mkp RCLK   &trans    &mkp LCLK   &trans         &trans     U_MS_L     U_MS_D     U_MS_U     U_MS_R 
