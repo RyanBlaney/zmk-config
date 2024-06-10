@@ -109,7 +109,7 @@
            &trans    &trans      &trans     &trans      &trans         &trans    &mkp LCLK   &trans   &mkp RCLK  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│Sens Down │ Mouse 2  │ Sens Up  │ Mouse 1  │          │   │          │          │          │          │          │
-           &trans     &mkp RCLK    &ms 1     &mkp LCLK   &trans          &trans     &trans     &trans     &trans     &trans 
+           &trans     &mkp RCLK    &trans     &mkp LCLK   &trans          &trans     &trans     &trans     &trans     &trans 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &trans         &trans     &trans   &trans      &trans      &trans
