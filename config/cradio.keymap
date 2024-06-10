@@ -112,13 +112,9 @@
         mouse_layer {
             bindings = <
         bindings = <
-                // Top row
-                &trans  &trans  &trans  &trans  &trans    &trans  &kp BTN1  &mm 0 1 1  &kp BTN2  &trans
-                // Home row
-                &ms -1  &trans  &ms 1  &trans  &trans    &trans  &mm -1 0 1  &mm 0 1 1  &mm 1 0 1  &mm 0 -1 1
-                // Bottom row
-                &trans  &trans  &trans  &trans  &trans    &trans  &ms -1  &mm 0 -1 1  &ms 1  &trans
-                // Thumb keys
+                &trans  &trans  &trans  &trans  &trans  &trans  &kp BTN1  &mm 0 1 1  &kp BTN2  &trans
+                &ms -1  &trans  &ms 1  &trans  &trans  &trans  &mm -1 0 1  &mm 0 1 1  &mm 1 0 1  &mm 0 -1 1
+                &trans  &trans  &trans  &trans  &trans  &trans  &ms -1  &mm 0 -1 1  &ms 1  &trans
                 &trans  &trans  &trans  &trans
             >;
         };
