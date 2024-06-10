@@ -6,8 +6,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-#include "../include/mouse_keys.h"
-#include "../include/mouse_keys.dtsi"
+#include "include/mouse_keys.h"
+#include "config/mouse_keys.dtsi"
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
@@ -120,10 +120,10 @@
            &trans    &trans      &trans     &trans      &trans         &trans     U_BTN1    U_WH_U     U_BTN2    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│Sens Down │ Mouse 2  │ Sens Up  │ Mouse 1  │          │   │          │          │          │          │          │
-           &trans      U_BTN2     &trans      U_BTN1    &trans          &trans     U_MS_L     U_MS_D     U_MS_U     U_MS_R 
+           &ms -1      U_BTN2     &ms 1      U_BTN1    &trans          &trans     U_MS_L     U_MS_D     U_MS_U     U_MS_R 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &trans   U_WH_D      &trans      &trans
+            &trans     &trans     &trans     &trans     &trans         &trans     &ms -1   U_WH_D      &ms 1      &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
