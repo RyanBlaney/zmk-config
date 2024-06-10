@@ -69,14 +69,14 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│   {      │  &       │  *       │  (       │   [      │   │  ^       │  (       │  )       │  ]       │  ~       │
-            &kb LBRC    &kp AMPS  &kp ASTRK  &kp LPAR &kb LBKT       &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
+        //│   {      │  &       │  *       │  (       │   [      │   │  ^       │  (       │  )       │  ]       │  ~       
+            &kp LBRC    &kp AMPS  &kp ASTRK  &kp LPAR &kp LBKT       &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  )       │  $       │  %       │  ^       │  _       │   │  *       │  -       │  =       │  \       │  `       │
             &kp RPAR   &kp DLLR   &kp PRCNT  &kp CARET  &kp UNDER      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ]       │  !       │  @       │ #        │   }      │   │  &       │  _       │  +       │  │       │          │
-            &kp RBKT  &kp EXCL    &kp AT     &kp HASH    &kb RBRC     &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
+            &kp RBKT  &kp EXCL    &kp AT     &kp HASH    &kp RBRC     &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
