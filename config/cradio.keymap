@@ -128,13 +128,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans     &trans     &trans     &trans     &trans         U_WH_L     &mkp LCLK  U_WH_U     &mkp RCLK  U_WH_R
+           &kp Q      &kp W      &kp E      &kp R      &kp T          U_WH_L     &mkp LCLK  U_WH_U     &mkp RCLK  U_WH_R
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans     &trans     &trans     &trans     &mkp LCLK      &mkp MCLK  U_MS_L     U_MS_D     U_MS_U     U_MS_R 
+           &kp A      &kp S      &kp D      &kp F      &mkp LCLK      &mkp MCLK  U_MS_L     U_MS_D     U_MS_U     U_MS_R 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans     &trans     &trans     &trans     &mkp RCLK      &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &trans
+           &kp Z      &kp X      &kp C      &kp V      &mkp RCLK      &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
