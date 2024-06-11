@@ -78,10 +78,10 @@
             &kp FSLH    &kp N7     &kp N8     &kp N9     &kp EQUAL     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ 0        │  4       │  5       │  6       │  -       │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-            &kp ASTRK  &kp N4     &kp N5   &kp N6      &kp MINUS     &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
+            &kp N0    &kp N4     &kp N5   &kp N6      &kp MINUS     &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ *        │  1       │  2       │  3       │  +       │   │  INSERT  │  DELETE  │ ESCAPE   │  ,       │  .       │
-           &kp N0     &kp N1     &kp N2     &kp N3     &kp PLUS       &kp INSERT &kp DELETE &kp ESC    &kp COMMA  &kp DOT
+           &kp ASTRK  &kp N1     &kp N2     &kp N3     &kp PLUS       &kp INSERT &kp DELETE &kp ESC    &kp COMMA  &kp DOT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -129,10 +129,10 @@
            &trans     &trans     &trans     &trans     &trans         U_WH_L     &mkp LCLK  U_WH_U     &mkp RCLK  U_WH_R
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans     &trans     &trans     &trans     &mkp LCLK      &trans     U_MS_L     U_MS_D     U_MS_U     U_MS_R 
+           &trans     &trans     &trans     &trans     &mkp LCLK      &mkp MCLK  U_MS_L     U_MS_D     U_MS_U     U_MS_R 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans     &trans     &trans     &trans     &mkp RCLK      &trans     &trans     U_WH_D     &trans     &trans
+           &trans     &trans     &trans     &trans     &mkp RCLK      &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
