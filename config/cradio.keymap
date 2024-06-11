@@ -143,13 +143,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp FN12   &kp FN7    &kp FN8    &kp FN9    &trans         &trans     &kt LGUI   &kt LCTRL  &kt LALT   &kt LSHFT
+           &kp F12    &kp F7     &kp F8     &kp F9     &trans         &trans     &kt LGUI   &kt LCTRL  &kt LALT   &kt LSHFT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //           │          │          │          │          │   │          │          │          │          │          │
-           &kp FN11   &kp FN4    &kp FN5    &kp FN6    &trans         &trans     &sk LGUI   &sk LCTRL  &sk LALT   &sk LSHFT 
+           &kp F11    &kp F4    &kp F5      &kp F6     &trans         &trans     &sk LGUI   &sk LCTRL  &sk LALT   &sk LSHFT 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp F10    &kp FN1    &kp FN2    &kp FN3    &trans         &trans     &trans     &trans     &trans     &trans
+           &kp F10    &kp F1    &kp F2      &kp F3     &trans         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
