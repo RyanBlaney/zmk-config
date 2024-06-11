@@ -120,7 +120,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans     &trans     &trans     &trans     &trans         &trans     &mkp LCLK  U_WH_U     &mkp RCLK  &trans
+           &trans     &trans     &trans     &trans     &trans         U_WH_L     &mkp LCLK  U_WH_U     &mkp RCLK  U_WH_R
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &trans     &trans     &trans     &trans     &mkp LCLK      &trans     U_MS_L     U_MS_D     U_MS_U     U_MS_R 
@@ -137,15 +137,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans    &trans      &trans     &trans      &trans         &trans    &trans     &trans     &trans     &trans
+           &kp FN12   &kp FN7    &kp FN8    &kp FN9    &trans         &trans     &kt LGUI   &kt LCTRL  &kt LALT   &kt LSHFT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //           │          │          │          │          │   │          │          │          │          │          │
-           &trans     &trans     &trans     &trans     &trans         &trans     &kt LGUI   &kt LCTRL  &kt LALT   &kt LSHFT 
+           &kp FN11   &kp FN4    &kp FN5    &kp FN6    &trans         &trans     &sk LGUI   &sk LCTRL  &sk LALT   &sk LSHFT 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &trans    &trans     &trans      &trans
+           &kp F10    &kp FN1    &kp FN2    &kp FN3    &trans         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                            &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
