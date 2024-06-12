@@ -40,8 +40,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
     };
@@ -85,7 +85,7 @@
         //│ *        │  1       │  2       │  3       │  +       │   │  INSERT  │  DELETE  │ ESCAPE   │  ,       │  .       │
            &kp ASTRK  &kp N1     &kp N2     &kp N3     &kp PLUS       &kp INSERT &kp DELETE &kp ESC    &kp COMMA  &kp DOT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &trans     &trans
+                                             &trans     &kp ESC        &trans    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -102,7 +102,7 @@
         //│  ]       │  !       │  @       │ #        │   }      │   │  &       │  .       │  +       │  │       │          │
             &kp RBKT  &kp EXCL    &kp AT     &kp HASH    &kp RBRC     &kp AMPS   &kp DOT  &kp PLUS   &kp PIPE   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &trans     &trans      &lt MOUSE SPACE &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -136,7 +136,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &kp Z      &kp X      &kp C      &kp V      &mkp RCLK      &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &trans    &kp SPACE         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
