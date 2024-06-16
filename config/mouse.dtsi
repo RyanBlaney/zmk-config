@@ -21,6 +21,20 @@
   delay-ms = <0>;                   // 10
 };
 
+/ {
+    zmk,behavior-increase-sensitivity {
+        compatible = "zmk,behavior";
+        label = "MOUSE_SENS_INCREASE";
+        bindings = <&zmk_mouse_increase_sensitivity>;
+    };
+
+    zmk,behavior-decrease-sensitivity {
+        compatible = "zmk,behavior";
+        label = "MOUSE_SENS_DECREASE";
+        bindings = <&zmk_mouse_decrease_sensitivity>;
+    };
+};
+
 #define U_MS_U &mmv MOVE_UP
 #define U_MS_D &mmv MOVE_DOWN
 #define U_MS_L &mmv MOVE_LEFT
