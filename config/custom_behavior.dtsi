@@ -1,0 +1,12 @@
+
+/ {
+    behaviors {
+        increase_sensitivity: behavior_increase_sensitivity {
+            compatible = "zmk,behavior";
+        };
+
+        decrease_sensitivity: behavior_decrease_sensitivity {
+            compatible = "zmk,behavior";
+        };
+    };
+};

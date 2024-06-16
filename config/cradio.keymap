@@ -8,6 +8,7 @@
 
 
 #include "mouse.dtsi"
+#include "custom_behavior.dtsi"
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
@@ -65,7 +66,7 @@
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │BACKSPACE │ / ?      │
+        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ REPEAT   │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &lt BLUETOOTH B  &kp N      &kp M   &kp COMMA  &key_repeat  &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                            &lt SYMBOL TAB &lt NAV SPACE &lt MOUSE ENTER  &lt NUMBER BSPC
@@ -85,7 +86,7 @@
         //│ *        │  1       │  2       │  3       │  +       │   │  INSERT  │  DELETE  │ ESCAPE   │  ,       │  .       │
            &kp ASTRK  &kp N1     &kp N2     &kp N3     &kp PLUS       &kp INSERT &kp DELETE &kp ESC    &kp COMMA  &kp DOT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &trans    &trans
+                                            &key_repeat &kp ESC        &trans    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -136,7 +137,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &kp Z      &kp X      &kp C      &kp V      &mkp RCLK      &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans    &kp SPACE         &trans     &trans
+                                             &kp N7    &kp SPACE    &decrease_sensitivity  &increase_sensitivity
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -151,7 +152,7 @@
            &kp F11    &kp F4    &kp F5      &kp F6     &trans         &trans     &sk LGUI   &sk LCTRL  &sk LALT   &sk LSHFT 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp F10    &kp F1    &kp F2      &kp F3     &trans         &trans     &trans     &trans     &trans     &trans
+           &kp F10    &kp F1    &kp F2      &kp F3     &trans         &trans     &tog MOUSE  &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
