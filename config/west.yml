@@ -1,12 +1,12 @@
 manifest:
   remotes:
-    - name: urob
-      url-base: https://github.com/urob
+    - name: RyanBlaney
+      url-base: https://github.com/RyanBlaney
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
-      remote: urob
+      remote: RyanBlaney
       revision: main
       import: app/west.yml
   self:
