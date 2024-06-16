@@ -137,7 +137,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
            &kp Z      &kp X      &kp C      &kp V      &mkp RCLK      &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp N7    &kp SPACE    &decrease_sensitivity  &increase_sensitivity
+                                             &kp N7    &kp SPACE      &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
