@@ -9,7 +9,6 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
 
-#define MAX_SENSITIVITY 10
 
 &mmv {
   acceleration-exponent = <1>;      // 1
