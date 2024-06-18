@@ -135,7 +135,7 @@
            &kp A      &kp S      &kp D      &kp F      &mkp LCLK      &mkp MCLK  U_MS_L     U_MS_D     U_MS_U     U_MS_R 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp Z      &kp X      &kp C      &kp V      &mkp RCLK      &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &trans
+          &ht LSHFT Z &ht LALT X &ht LCTRL C &kp TAB  &mkp RCLK       &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &kp RSHFT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &tog MOUSE &kp SPACE      &dec_sens  &inc_sens
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
