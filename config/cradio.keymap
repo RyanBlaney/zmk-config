@@ -14,11 +14,13 @@
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
 
 #define DEFAULT 0
-#define NUMBER 1
-#define SYMBOL 2
-#define BLUETOOTH 3
-#define MOUSE 4
-#define NAV 5
+#define COLEMAK 1
+#define NUMBER 2
+#define SYMBOL 3
+#define BLUETOOTH 4
+#define MOUSE 5
+#define NAV 6
+#define MOUSE_NUM 7
 
 #ifndef ZMK_MOUSE_DEFAULT_MOVE_VAL
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 200
@@ -49,14 +51,14 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <NUMBER SYMBOL>;
+            then-layer = <BLUETOOTH>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
-        default_layer {
+        qwerty_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
@@ -66,7 +68,24 @@
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ REPEAT   │ / ?      │
-            &kp Z      &kp X      &kp C      &kp V      &lt BLUETOOTH B  &kp N      &kp M   &kp COMMA  &key_repeat  &kp FSLH
+            &kp Z      &kp X      &kp C      &kp V      &kp B         &kp N      &kp M   &kp COMMA  &key_repeat  &kp FSLH
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                           &lt SYMBOL TAB &lt NAV SPACE &lt MOUSE ENTER  &lt NUMBER BSPC
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+
+        colemak_dh_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  ' "     │
+            &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp SQT
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  A       │  R       │  S       │  T       │  G       │   │  K       │  N       │  E       │  I       │  O       │
+            HRML(A,        R,         S,         T)     &kp G          &kp K      HRMR(N,        E,        I,        O)
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  Z       │  X       │  C       │  D       │  V       │   │  M       │  H       │ , <      │ REPEAT   │ / ?      │
+            &kp Z      &kp X      &kp C      &kp D      &kp V         &kp M      &kp H      &kp COMMA &key_repeat &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                            &lt SYMBOL TAB &lt NAV SPACE &lt MOUSE ENTER  &lt NUMBER BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -118,7 +137,7 @@
           &bootloader  &trans     &trans  &out OUT_TOG &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
+            &trans     &trans  &tog COLEMAK &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -135,7 +154,7 @@
            &kp A      &kp S      &kp D      &kp F      &mkp LCLK      &mkp MCLK  U_MS_L     U_MS_D     U_MS_U     U_MS_R 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-          &ht LSHFT Z &ht LALT X &ht LCTRL C &kp TAB  &mkp RCLK       &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &kp RSHFT
+          &ht LSHFT Z &ht LALT X &ht LCTRL C &kp TAB  &mkp RCLK       &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &lt MOUSE_NUM ESC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &tog MOUSE &kp SPACE      &dec_sens  &inc_sens
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -159,5 +178,23 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
+
+        mouse_num_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│          │          │          │          │          │   │          │          │          │          │          │
+           &kp N7      &kp W     &kp N8     &kp N9     &kp D          U_WH_L     &mkp LCLK  U_WH_U     &mkp RCLK  U_WH_R
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+           &kp A      &kp N4     &kp N5     &kp N6     &mkp LCLK      &mkp MCLK  U_MS_L     U_MS_D     U_MS_U     U_MS_R 
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+         &ht LSHFT Z &ht LALT N1 &ht LCTRL N2 &ht LGUI N3 &mkp RCLK   &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &trans
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                            &tog MOUSE &kp SPACE      &dec_sens  &inc_sens
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+
     };
 };
