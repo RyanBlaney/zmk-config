@@ -102,7 +102,7 @@
             HRML(N0,    N4,         N5,         N6)     &kp MINUS         &kp LARW  HRMR(DARW,   UARW,       RARW,      SEMI)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ *        │  1       │  2       │  3       │  +       │   │  INSERT  │  DELETE  │ ESCAPE   │  ,       │  .       │
-           &kp ASTRK  &kp N1     &kp N2     &kp N3     &kp PLUS       &kp INSERT &kp DELETE &kp ESC    &kp COMMA  &kp DOT
+           &kp ASTRK  &kp N1     &kp N2     &kp N3     &kp PLUS       &kp INSERT &kp DELETE &kp ESC    &kp SPACE  &kp DOT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &key_repeat &kp SPACE     &trans    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -122,7 +122,7 @@
         //│  ]       │  !       │  @       │ #        │   }      │   │  &       │  .       │  +       │  │       │          │
             &kp RBKT  &kp EXCL    &kp AT     &kp HASH    &kp RBRC     &kp AMPS   &kp DOT    &kp PLUS   &kp PIPE   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans      &lt MOUSE SPACE &trans
+                                             &trans     &trans      &lt MOUSE SPACE &key_repeat
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
