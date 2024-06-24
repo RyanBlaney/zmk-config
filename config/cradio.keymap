@@ -140,7 +140,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │          │          │          │PROFILE 0 │   │ BACKWARD │ PREVIOUS │PLAY/PAUSE│ NEXT     │ FORWARD  │
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &C_RW     &C_PREV     &C_PP     &C_NEXT    &C_FF
+           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0   &C_REWIND  &C_PREVIOUS &C_PP     &C_NEXT    &C_FAST_FORWARD
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │   BASS   │ VOL DN   │  MUTE    │  VOL UP  │  RECORD  │
           &bootloader  &trans     &trans  &out OUT_TOG &bt BT_SEL 1   &C_BASS_BOOST &C_VOL_DN &C_MUTE  &C_VOL_UP  &C_RECORD
