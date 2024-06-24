@@ -10,8 +10,8 @@
 #include "mouse.dtsi"
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &META LGUI k4
-#define HRMR(k1,k2,k3,k4) &META RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &META LALT k2  &META LCTRL k3  &META LGUI k4
+#define HRMR(k1,k2,k3,k4) &META RGUI k1  &META RCTRL k2  &META RALT k3  &ht RSHFT k4
 
 #define DEFAULT 0
 #define COLEMAK 1
@@ -128,8 +128,8 @@
         //│  )       │  $       │  %       │  ^       │  _       │   │  /       │  ,       │  =       │  \       │  `       │
            HRML(RPAR,  DLLR,       PRCNT,     CARET)    &kp UNDER      &kp FSLH  HRMR(COMMA,  EQUAL,     BSLH,     GRAVE)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ]       │  !       │  @       │ #        │   }      │   │  &       │  .       │  +       │  │       │          │
-            &kp RBKT  &kp EXCL    &kp AT     &kp HASH    &kp RBRC     &kp AMPS   &kp DOT    &kp PLUS   &kp PIPE   &trans
+        //│  ]       │  !       │  @       │ #        │   }      │   │  -       │  .       │  +       │  │       │          │
+            &kp RBKT  &kp EXCL    &kp AT     &kp HASH    &kp RBRC     &kp minus   &kp DOT    &kp PLUS   &kp PIPE   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans      &lt MOUSE SPACE &key_repeat
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
