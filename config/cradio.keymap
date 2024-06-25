@@ -129,7 +129,7 @@
            HRML(RPAR,  DLLR,       PRCNT,     CARET)    &kp UNDER      &kp FSLH  HRMR(COMMA,  EQUAL,     BSLH,     GRAVE)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ]       │  !       │  @       │ #        │   }      │   │  -       │  .       │  +       │  │       │          │
-            &kp RBKT  &kp EXCL    &kp AT     &kp HASH    &kp RBRC     &kp minus   &kp DOT    &kp PLUS   &kp PIPE   &trans
+            &kp RBKT  &kp EXCL    &kp AT     &kp HASH    &kp RBRC     &kp MINUS   &kp DOT    &kp PLUS   &kp PIPE   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans      &lt MOUSE SPACE &key_repeat
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
