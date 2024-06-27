@@ -111,7 +111,7 @@
             HRML(N0,    N4,         N5,         N6)     &kp MINUS         &kp LARW  HRMR(DARW,   UARW,       RARW,      SEMI)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ *        │  1       │  2       │  3       │  +       │   │  INSERT  │  DELETE  │ ESCAPE   │  ,       │  .       │
-           &kp ASTRK  &kp N1     &kp N2     &kp N3     &kp PLUS       &kp INSERT &kp DELETE &kp ESC    &kp SPACE  &kp DOT
+           &kp ASTRK  &kp N1     &kp N2     &kp N3     &kp PLUS       &kp INSERT &kp DELETE &kp ESC    &kp ENTER  &kp DOT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &key_repeat &lt BLUETOOTH SPACE     &trans    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
