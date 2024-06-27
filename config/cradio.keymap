@@ -125,13 +125,13 @@
         //│   {      │  &       │  *       │  (       │   [      │   │  ^       │  (       │  )       │  ]       │  ~       
             &kp LBRC    &kp AMPS  &kp ASTRK  &kp LPAR  &kp LBKT       &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  )       │  $       │  %       │  ^       │  _       │   │  /       │  ,       │  =       │  \       │  `       │
-           HRML(RPAR,  DLLR,       PRCNT,     CARET)    &kp UNDER      &kp FSLH  HRMR(COMMA,  EQUAL,     BSLH,     GRAVE)
+        //│  )       │  $       │  %       │  ^       │  _       │   │  /       │  ,       │  |       │  \       │  `       │
+           HRML(RPAR,  DLLR,       PRCNT,     CARET)    &kp UNDER      &kp FSLH  HRMR(COMMA,  PIPE,     BSLH,     GRAVE)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ]       │  !       │  @       │ #        │   }      │   │  -       │  .       │  +       │  │       │          │
-            &kp RBKT  &kp EXCL    &kp AT     &kp HASH    &kp RBRC     &kp MINUS   &kp DOT    &kp PLUS   &kp PIPE   &trans
+        //│  ]       │  !       │  @       │ #        │   }      │   │  -       │  .       │  +       │ SPACE    │          │
+            &kp RBKT  &kp EXCL    &kp AT     &kp HASH    &kp RBRC     &kp MINUS   &kp DOT    &kp PLUS   &kp SPACE  &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans      &lt MOUSE SPACE &key_repeat
+                                             &trans     &trans      &lt MOUSE ENTER &key_repeat
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
