@@ -3,6 +3,8 @@
 
 #pragma once
 
+
+#define HOST_OS 1
 #include "unicode_helper.h"
 
 / {
