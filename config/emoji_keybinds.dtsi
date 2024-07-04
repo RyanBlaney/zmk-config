@@ -1,4 +1,6 @@
 
+// emoji_keybinds.dtsi
+
 // Smileys & Emotion
 #define GRIN &kp U_PLUS1F600  // 😀
 #define GRIN_BIG_EYES &kp U_PLUS1F603  // 😃
@@ -51,11 +53,9 @@
 #define FACE_WITH_HEAD_BANDAGE &kp U_PLUS1F915  // 🤕
 #define NAUSEATED &kp U_PLUS1F922  // 🤢
 #define VOMIT &kp U_PLUS1F92E  // 🤮
-#define SNEEZE &kp U_PLUS1F927  // 🤧
 #define HOT &kp U_PLUS1F975  // 🥵
 #define COLD &kp U_PLUS1F976  // 🥶
 #define WOOZY &kp U_PLUS1F974  // 🥴
-#define DIZZY &kp U_PLUS1F635  // 😵
 #define EXPLODING_HEAD &kp U_PLUS1F92F  // 🤯
 #define COWBOY &kp U_PLUS1F920  // 🤠
 #define PARTY &kp U_PLUS1F973  // 🥳
@@ -80,12 +80,8 @@
 #define THUMBS_UP          &kp U_PLUS1F44D // 👍
 #define THUMBS_DOWN        &kp U_PLUS1F44E // 👎
 #define CLAP               &kp U_PLUS1F44F // 👏
-#define FIST               &kp U_PLUS1F44A // 👊
 #define VICTORY_HAND       &kp U_PLUS270C  // ✌
 #define OK_HAND            &kp U_PLUS1F44C // 👌
-#define PALM_UP            &kp U_PLUS1F91B // 🤛
-#define FIST_LEFT          &kp U_PLUS1F91A // 🤜
-#define FIST_RIGHT         &kp U_PLUS1F91C // 🤜
 #define FINGERS_CROSSED    &kp U_PLUS1F91E // 🤞
 #define PRAY               &kp U_PLUS1F64F // 🙏
 
@@ -113,10 +109,4 @@
 #define BRAIN              &kp U_PLUS1F9E0 // 🧠
 #define NO_HANDS           &kp U_PLUS1F645 // 🙅
 #define FACEPALM           &kp U_PLUS1F926 // 🤦
-
-
-
-
-
-
 
