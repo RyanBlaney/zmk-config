@@ -7,6 +7,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #include "mouse.dtsi"
+#include "emojis.dtsi"
 #include "unicode_helper.h"
 
 // Home row mods macro
@@ -58,9 +59,6 @@
             bindings = <&kp>, <&kp>;
         };
     };
-
-    
-    #include "emojis.dtsi"
 
     // conditional_layers {
     //     compatible = "zmk,conditional-layers";
