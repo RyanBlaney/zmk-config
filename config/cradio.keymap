@@ -7,8 +7,8 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #include "mouse.dtsi"
+#include "unicode_helper.h"
 #include "emojis.dtsi"
-// #include "unicode_helper.h"
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &META LALT k2  &META LCTRL k3  &META LGUI k4
