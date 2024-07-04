@@ -1,68 +1,319 @@
 
+
 /dts-v1/;
 
 / {
     behaviors {
-        ZMK_UNICODE_SINGLE(grin_squint, N1, F6, 0, 6)       // 😆
-        ZMK_UNICODE_SINGLE(wink, N1, F6, 0, 9)              // 😉
-        ZMK_UNICODE_SINGLE(smile_eyes, N1, F6, 0, A)        // 😊
-        ZMK_UNICODE_SINGLE(heart_eyes, N1, F6, 0, D)        // 😍
-        ZMK_UNICODE_SINGLE(thinking, N1, F9, 1, 4)          // 🤔
-        ZMK_UNICODE_SINGLE(grin_sweat, N1, F6, 0, 5)        // 😅
-        ZMK_UNICODE_SINGLE(upside_down, N1, F6, 4, 3)       // 🙃
-        ZMK_UNICODE_SINGLE(smiling_imp, N1, F6, 0, 8)       // 😈
-        ZMK_UNICODE_SINGLE(hand_over_mouth, N1, F9, 2, D)   // 🤭
-        ZMK_UNICODE_SINGLE(party, N1, F9, 7, 3)             // 🥳
-        ZMK_UNICODE_SINGLE(star_struck, N1, F9, 2, 9)       // 🤩
-        ZMK_UNICODE_SINGLE(sob, N1, F6, 2, D)               // 😭
-        ZMK_UNICODE_SINGLE(smirk, N1, F6, 0, F)             // 😏
-        ZMK_UNICODE_SINGLE(rofl, N1, F9, 2, 3)              // 🤣
-        ZMK_UNICODE_SINGLE(grin_smiling_eyes, N1, F6, 0, 4) // 😄
-        ZMK_UNICODE_SINGLE(hug, N1, F9, 1, 7)               // 🤗
-        ZMK_UNICODE_SINGLE(joy, N1, F6, 0, 2)               // 😂
-        ZMK_UNICODE_SINGLE(kiss, N1, F6, 1, 8)              // 😘
-        ZMK_UNICODE_SINGLE(smile_hearts, N1, F9, 7, 0)      // 🥰
-        ZMK_UNICODE_SINGLE(cold, N1, F9, 7, 6)              // 🥶
-        ZMK_UNICODE_SINGLE(zzz, N1, F4, A, 4)               // 💤
-        ZMK_UNICODE_SINGLE(skull, N1, F4, 8, 0)             // 💀
-        ZMK_UNICODE_SINGLE(crying, N1, F6, 2, 2)            // 😢
-        ZMK_UNICODE_SINGLE(vomit, N1, F9, 2, E)             // 🤮
-        ZMK_UNICODE_SINGLE(raised_eyebrow, N1, F9, 2, 8)    // 🤨
-        ZMK_UNICODE_SINGLE(neutral, N1, F6, 1, 0)           // 😐
-        ZMK_UNICODE_SINGLE(money, N1, F9, 1, 1)             // 🤑
-        ZMK_UNICODE_SINGLE(exploding_head, N1, F9, 2, F)    // 🤯
-        ZMK_UNICODE_SINGLE(sleep, N1, F6, 3, 4)             // 😴
-        ZMK_UNICODE_SINGLE(zany, N1, F9, 2, A)              // 🤪
-        ZMK_UNICODE_SINGLE(thumbs_up, N1, F4, 4, D)         // 👍
-        ZMK_UNICODE_SINGLE(thumbs_down, N1, F4, 4, E)       // 👎
-        ZMK_UNICODE_SINGLE(clap, N1, F4, 4, F)              // 👏
-        ZMK_UNICODE_SINGLE(fist_left, N1, F9, 1, B)         // 🤛
-        ZMK_UNICODE_SINGLE(fist_right, N1, F9, 1, C)        // 🤜
-        ZMK_UNICODE_SINGLE(fingers_crossed, N1, F9, 1, E)   // 🤞
-        ZMK_UNICODE_SINGLE(pray, N1, F6, 4, F)              // 🙏
-        ZMK_UNICODE_SINGLE(red_heart, N2, 7, 6, 4)          // ❤️
-        ZMK_UNICODE_SINGLE(black_heart, N1, F5, A, 4)       // 🖤
-        ZMK_UNICODE_SINGLE(heart_hands, N1, F9, 0, D)       // 🫶
-        ZMK_UNICODE_SINGLE(cupid_heart, N1, F4, 9, 6)       // 💖
-        ZMK_UNICODE_SINGLE(raised_hands, N1, F6, 4, C)      // 🙌
-        ZMK_UNICODE_SINGLE(wave, N1, F4, 4, B)              // 👋
-        ZMK_UNICODE_SINGLE(pinched_fingers, N1, F9, 0, C)   // 🤌
-        ZMK_UNICODE_SINGLE(sparkles, N2, 7, 2, 8)           // ✨
-        ZMK_UNICODE_SINGLE(middle_finger, N1, F5, 9, 5)     // 🖕
-        ZMK_UNICODE_SINGLE(dice, N1, F3, B, 2)              // 🎲
-        ZMK_UNICODE_SINGLE(heart_present, N1, F4, 9, E)     // 💖
-        ZMK_UNICODE_SINGLE(fire, N1, F5, 2, 5)              // 🔥
-        ZMK_UNICODE_SINGLE(point, N1, F4, 4, 7)             // 👇
-        ZMK_UNICODE_SINGLE(hand_left, N1, F4, 4, 8)         // 👈
-        ZMK_UNICODE_PAIR(heart_on_fire, N2, 7, 6, 4, N1, F9, 4, 6) // ❤️‍🔥
-        ZMK_UNICODE_SINGLE(palm, N1, F4, 5, 0)              // 👐
-        ZMK_UNICODE_SINGLE(shaka, N1, F9, 1, 9)             // 🤙
-        ZMK_UNICODE_SINGLE(handshake, N1, F9, 1, D)         // 🤝
-        ZMK_UNICODE_SINGLE(writing, N2, 7, 0, D)            // ✍️
-        ZMK_UNICODE_SINGLE(biceps, N1, F4, A, A)            // 💪
-        ZMK_UNICODE_SINGLE(brain, N1, F9, E, 0)             // 🧠
-        ZMK_UNICODE_SINGLE(no_hands, N1, F6, 4, 5)          // 🙅
-        ZMK_UNICODE_SINGLE(facepalm, N1, F9, 2, 6)          // 🤦
+        grin_squint {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 0 &kp 6 &macro_tap &kp RET>;
+        };
+
+        wink {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 0 &kp 9 &macro_tap &kp RET>;
+        };
+
+        smile_eyes {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 0 &kp A &macro_tap &kp RET>;
+        };
+
+        heart_eyes {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 0 &kp D &macro_tap &kp RET>;
+        };
+
+        thinking {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 1 &kp 4 &macro_tap &kp RET>;
+        };
+
+        grin_sweat {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 0 &kp 5 &macro_tap &kp RET>;
+        };
+
+        upside_down {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 4 &kp 3 &macro_tap &kp RET>;
+        };
+
+        smiling_imp {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 0 &kp 8 &macro_tap &kp RET>;
+        };
+
+        hand_over_mouth {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 2 &kp D &macro_tap &kp RET>;
+        };
+
+        party {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 7 &kp 3 &macro_tap &kp RET>;
+        };
+
+        star_struck {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 2 &kp 9 &macro_tap &kp RET>;
+        };
+
+        sob {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 2 &kp D &macro_tap &kp RET>;
+        };
+
+        smirk {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 0 &kp F &macro_tap &kp RET>;
+        };
+
+        rofl {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 2 &kp 3 &macro_tap &kp RET>;
+        };
+
+        grin_smiling_eyes {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 0 &kp 4 &macro_tap &kp RET>;
+        };
+
+        hug {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 1 &kp 7 &macro_tap &kp RET>;
+        };
+
+        joy {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 0 &kp 2 &macro_tap &kp RET>;
+        };
+
+        kiss {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 1 &kp 8 &macro_tap &kp RET>;
+        };
+
+        smile_hearts {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 7 &kp 0 &macro_tap &kp RET>;
+        };
+
+        cold {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 7 &kp 6 &macro_tap &kp RET>;
+        };
+
+        zzz {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F4 &kp A &kp 4 &macro_tap &kp RET>;
+        };
+
+        skull {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F4 &kp 8 &kp 0 &macro_tap &kp RET>;
+        };
+
+        crying {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 2 &kp 2 &macro_tap &kp RET>;
+        };
+
+        vomit {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 2 &kp E &macro_tap &kp RET>;
+        };
+
+        raised_eyebrow {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 2 &kp 8 &macro_tap &kp RET>;
+        };
+
+        neutral {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 1 &kp 0 &macro_tap &kp RET>;
+        };
+
+        money {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 1 &kp 1 &macro_tap &kp RET>;
+        };
+
+        exploding_head {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 2 &kp F &macro_tap &kp RET>;
+        };
+
+        sleep {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 3 &kp 4 &macro_tap &kp RET>;
+        };
+
+        zany {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 2 &kp A &macro_tap &kp RET>;
+        };
+
+        thumbs_up {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F4 &kp 4 &kp D &macro_tap &kp RET>;
+        };
+
+        thumbs_down {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F4 &kp 4 &kp E &macro_tap &kp RET>;
+        };
+
+        clap {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F4 &kp 4 &kp F &macro_tap &kp RET>;
+        };
+
+        fist_left {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 1 &kp B &macro_tap &kp RET>;
+        };
+
+        fist_right {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 1 &kp C &macro_tap &kp RET>;
+        };
+
+        fingers_crossed {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 1 &kp E &macro_tap &kp RET>;
+        };
+
+        pray {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 4 &kp F &macro_tap &kp RET>;
+        };
+
+        red_heart {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N2 &kp 7 &kp 6 &kp 4 &macro_tap &kp RET>;
+        };
+
+        black_heart {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F5 &kp A &kp 4 &macro_tap &kp RET>;
+        };
+
+        heart_hands {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 0 &kp D &macro_tap &kp RET>;
+        };
+
+        cupid_heart {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F4 &kp 9 &kp 6 &macro_tap &kp RET>;
+        };
+
+        raised_hands {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 4 &kp C &macro_tap &kp RET>;
+        };
+
+        wave {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F4 &kp 4 &kp B &macro_tap &kp RET>;
+        };
+
+        pinched_fingers {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 0 &kp C &macro_tap &kp RET>;
+        };
+
+        sparkles {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N2 &kp 7 &kp 2 &kp 8 &macro_tap &kp RET>;
+        };
+
+        middle_finger {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F5 &kp 9 &kp 5 &macro_tap &kp RET>;
+        };
+
+        dice {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F3 &kp B &kp 2 &macro_tap &kp RET>;
+        };
+
+        heart_present {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F4 &kp 9 &kp E &macro_tap &kp RET>;
+        };
+
+        fire {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F5 &kp 2 &kp 5 &macro_tap &kp RET>;
+        };
+
+        point {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F4 &kp 4 &kp 7 &macro_tap &kp RET>;
+        };
+
+        hand_left {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F4 &kp 4 &kp 8 &macro_tap &kp RET>;
+        };
+
+        heart_on_fire_lower {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N2 &kp 7 &kp 6 &kp 4 &macro_tap &kp RET>;
+        };
+
+        heart_on_fire_upper {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 4 &kp 6 &macro_tap &kp RET>;
+        };
+
+        heart_on_fire {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&heart_on_fire_lower &heart_on_fire_upper>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+
+        palm {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F4 &kp 5 &kp 0 &macro_tap &kp RET>;
+        };
+
+        shaka {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 1 &kp 9 &macro_tap &kp RET>;
+        };
+
+        handshake {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 1 &kp D &macro_tap &kp RET>;
+        };
+
+        writing {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N2 &kp 7 &kp 0 &kp D &macro_tap &kp RET>;
+        };
+
+        biceps {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F4 &kp A &kp A &macro_tap &kp RET>;
+        };
+
+        brain {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp E &kp 0 &macro_tap &kp RET>;
+        };
+
+        no_hands {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F6 &kp 4 &kp 5 &macro_tap &kp RET>;
+        };
+
+        facepalm {
+            compatible = "zmk,behavior-macro";
+            bindings = <&macro_tap &kp N1 &kp F9 &kp 2 &kp 6 &macro_tap &kp RET>;
+        };
     };
 };
 
