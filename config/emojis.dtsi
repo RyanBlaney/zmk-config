@@ -1,7 +1,5 @@
 
 
-/dts-v1/;
-
 / {
     behaviors {
         grin_squint {
