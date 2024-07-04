@@ -1,0 +1,122 @@
+
+// Smileys & Emotion
+#define GRIN &kp U_PLUS1F600  // 😀
+#define GRIN_BIG_EYES &kp U_PLUS1F603  // 😃
+#define GRIN_SMILING_EYES &kp U_PLUS1F604  // 😄
+#define BEAMING_EYES &kp U_PLUS1F601  // 😁
+#define GRIN_SQUINT &kp U_PLUS1F606  // 😆
+#define GRIN_SWEAT &kp U_PLUS1F605  // 😅
+#define ROFL &kp U_PLUS1F923  // 🤣
+#define JOY &kp U_PLUS1F602  // 😂
+#define SMILE &kp U_PLUS1F642  // 🙂
+#define UPSIDE_DOWN &kp U_PLUS1F643  // 🙃
+#define WINK &kp U_PLUS1F609  // 😉
+#define SMILE_EYES &kp U_PLUS1F60A  // 😊
+#define SMILE_HALO &kp U_PLUS1F607  // 😇
+#define SMILE_HEARTS &kp U_PLUS1F970  // 🥰
+#define HEART_EYES &kp U_PLUS1F60D  // 😍
+#define STAR_STRUCK &kp U_PLUS1F929  // 🤩
+#define KISS &kp U_PLUS1F618  // 😘
+#define KISS_FACE &kp U_PLUS1F617  // 😗
+#define SMILE_FACE &kp U_PLUS263A  // ☺
+#define KISS_EYE_CLOSED &kp U_PLUS1F61A  // 😚
+#define KISS_SMILE &kp U_PLUS1F619  // 😙
+#define TONGUE &kp U_PLUS1F61B  // 😛
+#define WINK_TONGUE &kp U_PLUS1F61C  // 😜
+#define ZANY &kp U_PLUS1F92A  // 🤪
+#define SQUINT_TONGUE &kp U_PLUS1F61D  // 😝
+#define MONEY &kp U_PLUS1F911  // 🤑
+#define HUG &kp U_PLUS1F917  // 🤗
+#define HAND_OVER_MOUTH &kp U_PLUS1F92D  // 🤭
+#define SHUSH &kp U_PLUS1F92B  // 🤫
+#define THINKING &kp U_PLUS1F914  // 🤔
+#define ZIPPER_MOUTH &kp U_PLUS1F910  // 🤐
+#define RAISED_EYEBROW &kp U_PLUS1F928  // 🤨
+#define NEUTRAL &kp U_PLUS1F610  // 😐
+#define EXPRESSIONLESS &kp U_PLUS1F611  // 😑
+#define NO_MOUTH &kp U_PLUS1F636  // 😶
+#define SMIRK &kp U_PLUS1F60F  // 😏
+#define UNAMUSED &kp U_PLUS1F612  // 😒
+#define ROLL_EYES &kp U_PLUS1F644  // 🙄
+#define GRIMACE &kp U_PLUS1F62C  // 😬
+#define LIES &kp U_PLUS1F925  // 🤥
+#define RELIEVED &kp U_PLUS1F60C  // 😌
+#define PENSIVE &kp U_PLUS1F614  // 😔
+#define SLEEPY &kp U_PLUS1F62A  // 😪
+#define DROOL &kp U_PLUS1F924  // 🤤
+#define SLEEP &kp U_PLUS1F634  // 😴
+#define SNEEZE &kp U_PLUS1F927  // 🤧
+#define DIZZY &kp U_PLUS1F635  // 😵
+#define FACE_WITH_THERMOMETER &kp U_PLUS1F912  // 🤒
+#define FACE_WITH_HEAD_BANDAGE &kp U_PLUS1F915  // 🤕
+#define NAUSEATED &kp U_PLUS1F922  // 🤢
+#define VOMIT &kp U_PLUS1F92E  // 🤮
+#define SNEEZE &kp U_PLUS1F927  // 🤧
+#define HOT &kp U_PLUS1F975  // 🥵
+#define COLD &kp U_PLUS1F976  // 🥶
+#define WOOZY &kp U_PLUS1F974  // 🥴
+#define DIZZY &kp U_PLUS1F635  // 😵
+#define EXPLODING_HEAD &kp U_PLUS1F92F  // 🤯
+#define COWBOY &kp U_PLUS1F920  // 🤠
+#define PARTY &kp U_PLUS1F973  // 🥳
+#define DISGUISE &kp U_PLUS1F978  // 🥸
+#define SMILING_IMP &kp U_PLUS1F608  // 😈
+#define IMP &kp U_PLUS1F47F  // 👿
+#define JAPANESE_OGRE &kp U_PLUS1F479  // 👹
+#define JAPANESE_GOBLIN &kp U_PLUS1F47A  // 👺
+#define CLOWN &kp U_PLUS1F921  // 🤡
+#define PILE_OF_POO &kp U_PLUS1F4A9  // 💩
+#define GHOST &kp U_PLUS1F47B  // 👻
+#define SKULL &kp U_PLUS1F480  // 💀
+#define SKULL_AND_CROSSBONES &kp U_PLUS2620  // ☠
+#define ALIEN &kp U_PLUS1F47D  // 👽
+#define SPACE_INVADER &kp U_PLUS1F47E  // 👾
+#define ROBOT &kp U_PLUS1F916  // 🤖
+#define CRYING &kp U_PLUS1F622  // 😢
+#define SOB &kp U_PLUS1F62D  // 😭
+#define TIRED &kp U_PLUS1F62B  // 😫
+#define ZZZ &kp U_PLUS1F4A4  // 💤
+
+#define THUMBS_UP          &kp U_PLUS1F44D // 👍
+#define THUMBS_DOWN        &kp U_PLUS1F44E // 👎
+#define CLAP               &kp U_PLUS1F44F // 👏
+#define FIST               &kp U_PLUS1F44A // 👊
+#define VICTORY_HAND       &kp U_PLUS270C  // ✌
+#define OK_HAND            &kp U_PLUS1F44C // 👌
+#define PALM_UP            &kp U_PLUS1F91B // 🤛
+#define FIST_LEFT          &kp U_PLUS1F91A // 🤜
+#define FIST_RIGHT         &kp U_PLUS1F91C // 🤜
+#define FINGERS_CROSSED    &kp U_PLUS1F91E // 🤞
+#define PRAY               &kp U_PLUS1F64F // 🙏
+
+#define RED_HEART          &kp U_PLUS2764  // ❤️
+#define BLACK_HEART        &kp U_PLUS1F5A4 // 🖤
+#define HEART_HANDS        &kp U_PLUS1F90D // 🫶
+#define CUPID_HEART        &kp U_PLUS1F496 // 💖
+
+#define RAISED_HANDS       &kp U_PLUS1F64C // 🙌
+#define WAVE               &kp U_PLUS1F44B // 👋
+#define PINCH              &kp U_PLUS1F90C // 🤌
+#define SPARKLES           &kp U_PLUS2728  // ✨
+#define MIDDLE_FINGER      &kp U_PLUS1F595 // 🖕
+#define DICE               &kp U_PLUS1F3B2 // 🎲
+#define HEART_PRESENT      &kp U_PLUS1F49E // 💖
+#define FIRE               &kp U_PLUS1F525 // 🔥
+#define POINT              &kp U_PLUS1F447 // 👇
+#define PINCH2             &kp U_PLUS1F448 // 👈
+#define HEART_ON_FIRE      &kp U_PLUS2764U  // ❤️‍🔥
+#define PALM               &kp U_PLUS1F450 // 👐
+#define SHAKA              &kp U_PLUS1F919 // 🤙
+#define HANDSHAKE          &kp U_PLUS1F91D // 🤝
+#define WRITING            &kp U_PLUS270D  // ✍️
+#define BICEPS             &kp U_PLUS1F4AA // 💪
+#define BRAIN              &kp U_PLUS1F9E0 // 🧠
+#define NO_HANDS           &kp U_PLUS1F645 // 🙅
+#define FACEPALM           &kp U_PLUS1F926 // 🤦
+
+
+
+
+
+
+
