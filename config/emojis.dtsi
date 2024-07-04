@@ -6,12 +6,6 @@
 
 / {
     compatible = "zmk,config";
-    macros {
-        emoji_macro {
-            compatible = "zmk,behavior-macro";
-            label = "Emoji Macro";
-        };
-    };
 
     // Define Unicode characters
     ZMK_UNICODE_SINGLE(grin_squint, N1, F6, 0, 6)       // 😆
