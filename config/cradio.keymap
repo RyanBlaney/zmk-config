@@ -7,6 +7,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #include "mouse.dtsi"
+#define HOST_OS 1  
 #include "unicode_helper.h"
 #include "emojis.h"
 
@@ -196,7 +197,7 @@
            &kp A      &kp N4     &kp N5     &kp N6     &mkp LCLK      &mkp MCLK  U_MS_L     U_MS_D     U_MS_U     U_MS_R 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-         &ht LSHFT Z &META LALT N1 &META LCTRL N2 &META LGUI N3 &mkp RCLK   &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &trans
+         &ht LSHFT Z &META LALT N1 &META LCTRL N2 &META LGUI N3     &mkp RCLK   &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &tog MOUSE &kp SPACE      &dec_sens  &inc_sens
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
