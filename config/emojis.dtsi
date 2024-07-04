@@ -2,8 +2,7 @@
 // emoji.dtsi
 #pragma once
 
-/ {
-    compatible = "zmk,config";
+
 
     // Define Unicode characters
     ZMK_UNICODE_SINGLE(grin_squint, N1, F6, 0, 6)       // 😆
@@ -67,5 +66,4 @@
     ZMK_UNICODE_SINGLE(brain, N1, F9, E, 0)             // 🧠
     ZMK_UNICODE_SINGLE(no_hands, N1, F6, 4, 5)          // 🙅
     ZMK_UNICODE_SINGLE(facepalm, N1, F9, 2, 6)          // 🤦
-};
 
