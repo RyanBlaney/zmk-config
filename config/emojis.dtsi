@@ -4,6 +4,7 @@
 
 #include "unicode_helper.h"
 
+
 // Define Unicode characters
 ZMK_UNICODE_SINGLE(grin_squint, N1, F6, 0, 6)  // 😆
 ZMK_UNICODE_SINGLE(wink, N1, F6, 0, 9)         // 😉
@@ -57,7 +58,7 @@ ZMK_UNICODE_SINGLE(heart_present, N1, F4, 9, E) // 💖
 ZMK_UNICODE_SINGLE(fire, N1, F5, 2, 5)          // 🔥
 ZMK_UNICODE_SINGLE(point, N1, F4, 4, 7)         // 👇
 ZMK_UNICODE_SINGLE(hand_left, N1, F4, 4, 8)     // 👈
-ZMK_UNICODE_SINGLE(heart_on_fire, N2, 7, 6, 4, N1, F9, 4, 6) // ❤️‍🔥
+ZMK_UNICODE_PAIR(heart_on_fire, N2, 7, 6, 4, N1, F9, 4, 6) // ❤️‍🔥
 ZMK_UNICODE_SINGLE(palm, N1, F4, 5, 0)          // 👐
 ZMK_UNICODE_SINGLE(shaka, N1, F9, 1, 9)         // 🤙
 ZMK_UNICODE_SINGLE(handshake, N1, F9, 1, D)     // 🤝
