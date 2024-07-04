@@ -1,8 +1,6 @@
 
-// emoji_keybinds.dtsi
+// emoji.dtsi
 #pragma once
-
-#include "unicode_helper.h"
 
 / {
     compatible = "zmk,config";
