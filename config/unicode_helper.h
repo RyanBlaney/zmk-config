@@ -1,9 +1,3 @@
-/*
- * unicode_helper.h
- *
- * Convenience macros simplifying ZMK's keymap configuration.
- * See https://github.com/urob/zmk-helpers for documentation.
- */
 
 #pragma once
 

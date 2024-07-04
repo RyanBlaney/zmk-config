@@ -8,6 +8,7 @@
 
 #include "mouse.dtsi"
 // #include "emojis.dtsi"
+#define HOST_OS 1
 #include "unicode_helper.h"
 
 // Home row mods macro
