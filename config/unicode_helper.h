@@ -1,4 +1,4 @@
-
+#pragma once
 
 #define ZMK_HELPER_STRINGIFY(x) #x
 
