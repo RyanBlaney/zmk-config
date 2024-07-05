@@ -209,7 +209,14 @@
                 &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
                 &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SQT
                 &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH
-                &lt NAV TAB &lt SYM SPACE &lt NUM ENTER &grin_squint BSPC
+                &lt NAV TAB &lt SYM SPACE &lt NUM ENTER &grin_squint BSPCdefault_layer {
+            bindings = <
+                &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
+                &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SQT
+                &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH
+                &lt NAV TAB &lt SYM SPACE &lt NUM ENTER &grin_squint 
+            >;
+        };
             >;
         };
 
