@@ -9,7 +9,7 @@
 #include "mouse.dtsi"
 #define HOST_OS 1  
 #include "unicode_helper.h"
-#include "emojis.h"
+#include "emojis.dtsi"
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &META LALT k2  &META LCTRL k3  &META LGUI k4
