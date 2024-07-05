@@ -1,3 +1,5 @@
+#include <dt-bindings/zmk/keys.h>
+
 ZMK_UNICODE_SINGLE(grin_squint, N1, F6, 0, 6)       // 😆
 ZMK_UNICODE_SINGLE(wink, N1, F6, 0, 9)              // 😉
 ZMK_UNICODE_SINGLE(smile_eyes, N1, F6, 0, A)        // 😊
