@@ -1,4 +1,3 @@
-
 /dts-v1/;
 
 / {
@@ -53,5 +52,14 @@
     ZMK_UNICODE_SINGLE(fire, N1, F5, 2, 5);              // 🔥
     ZMK_UNICODE_SINGLE(point, N1, F4, 4, 7);             // 👇
     ZMK_UNICODE_SINGLE(hand_left, N1, F4, 4, 8);         // 👈
-    ZMK_UNICODE_PAIR(heart_on_fire, N2, 7, 6, 4, N1, F9, 4, 
+    ZMK_UNICODE_PAIR(heart_on_fire, N2, 7, 6, 4, N1, F9, 4, 6); // ❤️‍🔥
+    ZMK_UNICODE_SINGLE(palm, N1, F4, 5, 0);              // 👐
+    ZMK_UNICODE_SINGLE(shaka, N1, F9, 1, 9);             // 🤙
+    ZMK_UNICODE_SINGLE(handshake, N1, F9, 1, D);         // 🤝
+    ZMK_UNICODE_SINGLE(writing, N2, 7, 0, D);            // ✍️
+    ZMK_UNICODE_SINGLE(biceps, N1, F4, A, A);            // 💪
+    ZMK_UNICODE_SINGLE(brain, N1, F9, E, 0);             // 🧠
+    ZMK_UNICODE_SINGLE(no_hands, N1, F6, 4, 5);          // 🙅
+    ZMK_UNICODE_SINGLE(facepalm, N1, F9, 2, 6);          // 🤦
+};
 
