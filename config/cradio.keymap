@@ -9,7 +9,7 @@
 #include "mouse.dtsi"
 // #define HOST_OS 1  
 // #include "unicode_helper.h"
-// #include "emojis.dtsi"
+#include "emojis.dtsi"
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &META LALT k2  &META LCTRL k3  &META LGUI k4
@@ -26,9 +26,6 @@
 #define EMOJI_1 8
 #define EMOJI_2 9
 
-
-#define OS_UNICODE_LEAD &macro_tap &kp LS(LC(U))
-#define OS_UNICODE_TRAIL &macro_tap &kp RET
 
 #ifndef ZMK_MOUSE_DEFAULT_MOVE_VAL
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 200
@@ -64,13 +61,6 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <120>;
             bindings = <&kp>, <&kp>;
-        };
-    };
-
-    macros {
-        grin_squint: grin_squint {
-            compatible = "zmk,behavior-macro";
-            bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 0 &kp 6 OS_UNICODE_TRAIL>;
         };
     };
 
@@ -215,16 +205,20 @@
             >;
         };
 
-        emoji_1_layer {
+        unicode_layer {
             bindings = <
-                &grin_squint &kp Q &kp W &kp E &kp R
-                &kp A &kp S &kp D &kp F &kp G
-                &kp Z &kp X &kp C &kp V &kp B
-                &kp LSHIFT &kp LCTRL
-                &kp Y &kp U &kp I &kp O &kp P
-                &kp H &kp J &kp K &kp L &kp SEMI
-                &kp N &kp M &kp COMMA &kp DOT &kp SLASH
-                &kp RSHIFT &kp RCTRL            
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│ grin_sq  │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
+            &grin_squint &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│ wink     │  S       │  D       │  F       │  G       │   │  H       │ smile_e  │ heart_e  │ thinkin  │ ' "      │
+            &wink      &kp S      &kp D      &kp F      &kp G          &kp H      &smile_eyes &heart_eyes &thinking &kp SQT
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ REPEAT   │ / ?      │
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &key_repeat &kp FSLH
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                            &lt SYMBOL TAB &lt NAV SPACE &lt MOUSE ENTER  &lt NUMBER BSPC
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 

@@ -1,8 +1,10 @@
 
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
-#define OS_UNICODE_LEAD &macro_tap &kp LS(LC(U))
-#define OS_UNICODE_TRAIL &macro_tap &kp SPACE
+#define OS_UNICODE_LEAD &macro_tap &kp LS(LC(U))  // Linux
+#define OS_UNICODE_TRAIL &macro_tap &kp RET  // Linux
 
 / {
     macros {
@@ -10,257 +12,21 @@
             compatible = "zmk,behavior-macro";
             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 0 &kp 6 OS_UNICODE_TRAIL>;
         };
+        wink: wink {
+            compatible = "zmk,behavior-macro";
+            bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 0 &kp 9 OS_UNICODE_TRAIL>;
+        };
+        smile_eyes: smile_eyes {
+            compatible = "zmk,behavior-macro";
+            bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 0 &kp A OS_UNICODE_TRAIL>;
+        };
+        heart_eyes: heart_eyes {
+            compatible = "zmk,behavior-macro";
+            bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 0 &kp D OS_UNICODE_TRAIL>;
+        };
+        thinking: thinking {
+            compatible = "zmk,behavior-macro";
+            bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 1 &kp 4 OS_UNICODE_TRAIL>;
+        };
     };
 };
-
-
-// #include <dt-bindings/zmk/keys.h>
-//
-// #define OS_UNICODE_LEAD &macro_tap &kp LS(LC(U))
-// #define OS_UNICODE_TRAIL &macro_tap &kp SPACE
-//
-// / {
-//     macros {
-//         grin_squint: grin_squint {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 0 &kp 6 OS_UNICODE_TRAIL>;
-//         };
-//         wink: wink {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 0 &kp 9 OS_UNICODE_TRAIL>;
-//         };
-//         smile_eyes: smile_eyes {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 0 &kp A OS_UNICODE_TRAIL>;
-//         };
-//         heart_eyes: heart_eyes {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 0 &kp D OS_UNICODE_TRAIL>;
-//         };
-//         thinking: thinking {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 1 &kp 4 OS_UNICODE_TRAIL>;
-//         };
-//         grin_sweat: grin_sweat {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 0 &kp 5 OS_UNICODE_TRAIL>;
-//         };
-//         upside_down: upside_down {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 4 &kp 3 OS_UNICODE_TRAIL>;
-//         };
-//         smiling_imp: smiling_imp {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 0 &kp 8 OS_UNICODE_TRAIL>;
-//         };
-//         hand_over_mouth: hand_over_mouth {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 2 &kp D OS_UNICODE_TRAIL>;
-//         };
-//         party: party {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 7 &kp 3 OS_UNICODE_TRAIL>;
-//         };
-//         star_struck: star_struck {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 2 &kp 9 OS_UNICODE_TRAIL>;
-//         };
-//         sob: sob {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 2 &kp D OS_UNICODE_TRAIL>;
-//         };
-//         smirk: smirk {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 0 &kp F OS_UNICODE_TRAIL>;
-//         };
-//         rofl: rofl {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 2 &kp 3 OS_UNICODE_TRAIL>;
-//         };
-//         grin_smiling_eyes: grin_smiling_eyes {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 0 &kp 4 OS_UNICODE_TRAIL>;
-//         };
-//         hug: hug {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 1 &kp 7 OS_UNICODE_TRAIL>;
-//         };
-//         joy: joy {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 0 &kp 2 OS_UNICODE_TRAIL>;
-//         };
-//         kiss: kiss {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 1 &kp 8 OS_UNICODE_TRAIL>;
-//         };
-//         smile_hearts: smile_hearts {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 7 &kp 0 OS_UNICODE_TRAIL>;
-//         };
-//         cold: cold {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 7 &kp 6 OS_UNICODE_TRAIL>;
-//         };
-//         zzz: zzz {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F4 &kp A &kp 4 OS_UNICODE_TRAIL>;
-//         };
-//         skull: skull {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F4 &kp 8 &kp 0 OS_UNICODE_TRAIL>;
-//         };
-//         crying: crying {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 2 &kp 2 OS_UNICODE_TRAIL>;
-//         };
-//         vomit: vomit {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 2 &kp E OS_UNICODE_TRAIL>;
-//         };
-//         raised_eyebrow: raised_eyebrow {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 2 &kp 8 OS_UNICODE_TRAIL>;
-//         };
-//         neutral: neutral {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 1 &kp 0 OS_UNICODE_TRAIL>;
-//         };
-//         money: money {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 1 &kp 1 OS_UNICODE_TRAIL>;
-//         };
-//         exploding_head: exploding_head {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 2 &kp F OS_UNICODE_TRAIL>;
-//         };
-//         sleep: sleep {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 3 &kp 4 OS_UNICODE_TRAIL>;
-//         };
-//         zany: zany {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 2 &kp A OS_UNICODE_TRAIL>;
-//         };
-//         thumbs_up: thumbs_up {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F4 &kp 4 &kp D OS_UNICODE_TRAIL>;
-//         };
-//         thumbs_down: thumbs_down {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F4 &kp 4 &kp E OS_UNICODE_TRAIL>;
-//         };
-//         clap: clap {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F4 &kp 4 &kp F OS_UNICODE_TRAIL>;
-//         };
-//         fist_left: fist_left {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 1 &kp B OS_UNICODE_TRAIL>;
-//         };
-//         fist_right: fist_right {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 1 &kp C OS_UNICODE_TRAIL>;
-//         };
-//         fingers_crossed: fingers_crossed {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 1 &kp E OS_UNICODE_TRAIL>;
-//         };
-//         pray: pray {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 4 &kp F OS_UNICODE_TRAIL>;
-//         };
-//         red_heart: red_heart {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N2 &kp 7 &kp 6 &kp 4 OS_UNICODE_TRAIL>;
-//         };
-//         black_heart: black_heart {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F5 &kp A &kp 4 OS_UNICODE_TRAIL>;
-//         };
-//         heart_hands: heart_hands {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 0 &kp D OS_UNICODE_TRAIL>;
-//         };
-//         cupid_heart: cupid_heart {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F4 &kp 9 &kp 6 OS_UNICODE_TRAIL>;
-//         };
-//         raised_hands: raised_hands {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 4 &kp C OS_UNICODE_TRAIL>;
-//         };
-//         wave: wave {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F4 &kp 4 &kp B OS_UNICODE_TRAIL>;
-//         };
-//         pinched_fingers: pinched_fingers {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 0 &kp C OS_UNICODE_TRAIL>;
-//         };
-//         sparkles: sparkles {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N2 &kp 7 &kp 2 &kp 8 OS_UNICODE_TRAIL>;
-//         };
-//         middle_finger: middle_finger {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F5 &kp 9 &kp 5 OS_UNICODE_TRAIL>;
-//         };
-//         dice: dice {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F3 &kp B &kp 2 OS_UNICODE_TRAIL>;
-//         };
-//         heart_present: heart_present {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F4 &kp 9 &kp E OS_UNICODE_TRAIL>;
-//         };
-//         fire: fire {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F5 &kp 2 &kp 5 OS_UNICODE_TRAIL>;
-//         };
-//         point: point {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F4 &kp 4 &kp 7 OS_UNICODE_TRAIL>;
-//         };
-//         hand_left: hand_left {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F4 &kp 4 &kp 8 OS_UNICODE_TRAIL>;
-//         };
-//         heart_on_fire: heart_on_fire {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N2 &kp 7 &kp 6 &kp 4 &kp N1 &kp F9 &kp 4 &kp 6 OS_UNICODE_TRAIL>;
-//         };
-//         palm: palm {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F4 &kp 5 &kp 0 OS_UNICODE_TRAIL>;
-//         };
-//         shaka: shaka {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 1 &kp 9 OS_UNICODE_TRAIL>;
-//         };
-//         handshake: handshake {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 1 &kp D OS_UNICODE_TRAIL>;
-//         };
-//         writing: writing {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N2 &kp 7 &kp 0 &kp D OS_UNICODE_TRAIL>;
-//         };
-//         biceps: biceps {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F4 &kp A &kp A OS_UNICODE_TRAIL>;
-//         };
-//         brain: brain {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp E &kp 0 OS_UNICODE_TRAIL>;
-//         };
-//         no_hands: no_hands {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 4 &kp 5 OS_UNICODE_TRAIL>;
-//         };
-//         facepalm: facepalm {
-//             compatible = "zmk,behavior-macro";
-//             bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F9 &kp 2 &kp 6 OS_UNICODE_TRAIL>;
-//         };
-//     };
-// };
-//
