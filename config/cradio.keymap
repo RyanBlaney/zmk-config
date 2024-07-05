@@ -7,9 +7,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #include "mouse.dtsi"
-#define HOST_OS 1  
-#include "unicode_helper.h"
-#include "emojis.dtsi"
+// #define HOST_OS 1  
+// #include "unicode_helper.h"
+// #include "emojis.dtsi"
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &META LALT k2  &META LCTRL k3  &META LGUI k4
@@ -25,6 +25,10 @@
 #define MOUSE_NUM 7
 #define EMOJI_1 8
 #define EMOJI_2 9
+
+
+#define OS_UNICODE_LEAD &macro_tap &kp LS(LC(U))
+#define OS_UNICODE_TRAIL &macro_tap &kp RET
 
 #ifndef ZMK_MOUSE_DEFAULT_MOVE_VAL
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 200
@@ -60,6 +64,13 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <120>;
             bindings = <&kp>, <&kp>;
+        };
+    };
+
+    macros {
+        grin_squint: grin_squint {
+            compatible = "zmk,behavior-macro";
+            bindings = <OS_UNICODE_LEAD &macro_tap &kp N1 &kp F6 &kp 0 &kp 6 OS_UNICODE_TRAIL>;
         };
     };
 
