@@ -678,4 +678,4 @@
                        <&macro_tap &kp N1 &kp F9 &kp 1 &kp 6 &kp SPC>;
         };
     };
-}
+};
