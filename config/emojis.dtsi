@@ -636,7 +636,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp F4 &kp AA &kp SPC>;
+                       <&macro_tap &kp N1 &kp F4 &kp A &kp A &kp SPC>;
         };
 
         // Brain (🧠)
