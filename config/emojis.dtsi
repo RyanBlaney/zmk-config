@@ -1,6 +1,6 @@
 #include <dt-bindings/zmk/keys.h>
 
-/ {
+&keymap {
     macros {
         // Grinning Squinting Face (😆)
         grin_squint: grin_squint {
