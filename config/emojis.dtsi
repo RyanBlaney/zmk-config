@@ -9,7 +9,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N0 &kp N6 &kp N6 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N0 &kp N6 &kp SPC>;
         };
 
         // Winking Face (😉)
@@ -21,7 +21,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N0 &kp N9 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N0 &kp N9 &kp SPC>;
         };
 
         // Smiling Face with Smiling Eyes (😊)
@@ -33,7 +33,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N0 &kp N8 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N0 &kp A &kp SPC>;
         };
 
         // Heart Eyes (😍)
