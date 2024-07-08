@@ -9,7 +9,7 @@
 #include "mouse.dtsi"
 // #define HOST_OS 1  
 // #include "unicode_helper.h"
-#include "emojis.dtsi"
+// #include "emojis.dtsi"
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &META LALT k2  &META LCTRL k3  &META LGUI k4
@@ -256,4 +256,683 @@
               //                               ╰──────────┴──────────╯   ╰──────────┴──────────╯
           >;
       };
+
+      macros {
+          // Grinning Squinting Face (😆)
+          grin_squint: grin_squint {
+              label = "GRIN_SQUINT";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 0 &kp 6 &kp SPC>;
+          };
+
+          // Winking Face (😉)
+          wink: wink {
+              label = "WINK";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 0 &kp 9 &kp SPC>;
+          };
+
+          // Smiling Face with Smiling Eyes (😊)
+          smile_eyes: smile_eyes {
+              label = "SMILE_EYES";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 0 &kp A &kp SPC>;
+          };
+
+          // Heart Eyes (😍)
+          heart_eyes: heart_eyes {
+              label = "HEART_EYES";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 0 &kp D &kp SPC>;
+          };
+
+          // Thinking Face (🤔)
+          thinking: thinking {
+              label = "THINKING";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 1 &kp 4 &kp SPC>;
+          };
+
+          // Grinning Face with Sweat (😅)
+          grin_sweat: grin_sweat {
+              label = "GRIN_SWEAT";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 0 &kp 5 &kp SPC>;
+          };
+
+          // Upside-Down Face (🙃)
+          upside_down: upside_down {
+              label = "UPSIDE_DOWN";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 4 &kp 3 &kp SPC>;
+          };
+
+          // Smiling Face with Horns (😈)
+          smiling_imp: smiling_imp {
+              label = "SMILING_IMP";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 0 &kp 8 &kp SPC>;
+          };
+
+          // Face with Hand Over Mouth (🤭)
+          hand_over_mouth: hand_over_mouth {
+              label = "HAND_OVER_MOUTH";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 2 &kp D &kp SPC>;
+          };
+
+          // Party Popper (🥳)
+          party: party {
+              label = "PARTY";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 7 &kp 3 &kp SPC>;
+          };
+
+          // Star-Struck (🤩)
+          star_struck: star_struck {
+              label = "STAR_STRUCK";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 2 &kp 9 &kp SPC>;
+          };
+
+          // Sob (😭)
+          sob: sob {
+              label = "SOB";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 2 &kp D &kp SPC>;
+          };
+
+          // Smirk (😏)
+          smirk: smirk {
+              label = "SMIRK";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 0 &kp F &kp SPC>;
+          };
+
+          // Rolling on the Floor Laughing (🤣)
+          rofl: rofl {
+              label = "ROFL";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 2 &kp 3 &kp SPC>;
+          };
+
+          // Grinning Face with Smiling Eyes (😄)
+          grin_smiling_eyes: grin_smiling_eyes {
+              label = "GRIN_SMILING_EYES";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 0 &kp 4 &kp SPC>;
+          };
+
+          // Hugging Face (🤗)
+          hug: hug {
+              label = "HUG";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 1 &kp 7 &kp SPC>;
+          };
+
+          // Face with Tears of Joy (😂)
+          joy: joy {
+              label = "JOY";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 0 &kp 2 &kp SPC>;
+          };
+
+          // Face Blowing a Kiss (😘)
+          kiss: kiss {
+              label = "KISS";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 1 &kp 8 &kp SPC>;
+          };
+
+          // Smiling Face with Hearts (🥰)
+          smile_hearts: smile_hearts {
+              label = "SMILE_HEARTS";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 7 &kp 0 &kp SPC>;
+          };
+
+          // Cold Face (🥶)
+          cold: cold {
+              label = "COLD";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 7 &kp 6 &kp SPC>;
+          };
+
+          // Sleeping Face (😴)
+          sleep: sleep {
+              label = "SLEEP";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 3 &kp 4 &kp SPC>;
+          };
+
+          // Zany Face (🤪)
+          zany: zany {
+              label = "ZANY";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 2 &kp A &kp SPC>;
+          };
+
+          // Thumbs Up (👍)
+          thumbs_up: thumbs_up {
+              label = "THUMBS_UP";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F4 &kp 4 &kp D &kp SPC>;
+          };
+
+          // Thumbs Down (👎)
+          thumbs_down: thumbs_down {
+              label = "THUMBS_DOWN";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F4 &kp 4 &kp E &kp SPC>;
+          };
+
+          // Clapping Hands (👏)
+          clap: clap {
+              label = "CLAP";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F4 &kp 4 &kp F &kp SPC>;
+          };
+
+          // Left-Facing Fist (🤛)
+          fist_left: fist_left {
+              label = "FIST_LEFT";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 1 &kp B &kp SPC>;
+          };
+
+          // Right-Facing Fist (🤜)
+          fist_right: fist_right {
+              label = "FIST_RIGHT";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 1 &kp C &kp SPC>;
+          };
+
+          // Crossed Fingers (🤞)
+          fingers_crossed: fingers_crossed {
+              label = "FINGERS_CROSSED";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 1 &kp E &kp SPC>;
+          };
+
+          // Folded Hands (🙏)
+          pray: pray {
+              label = "PRAY";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 4 &kp F &kp SPC>;
+          };
+
+          // Red Heart (❤️)
+          red_heart: red_heart {
+              label = "RED_HEART";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N2 &kp 7 &kp 6 &kp 4 &kp SPC>;
+          };
+
+          // Black Heart (🖤)
+          black_heart: black_heart {
+              label = "BLACK_HEART";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F5 &kp A &kp 4 &kp SPC>;
+          };
+
+          // Heart Hands (🫶)
+          heart_hands: heart_hands {
+              label = "HEART_HANDS";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 0 &kp D &kp SPC>;
+          };
+
+          // Sparkling Heart (💖)
+          cupid_heart: cupid_heart {
+              label = "CUPID_HEART";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F4 &kp 9 &kp 6 &kp SPC>;
+          };
+
+          // Raised Hands (🙌)
+          raised_hands: raised_hands {
+              label = "RAISED_HANDS";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 4 &kp C &kp SPC>;
+          };
+
+          // Waving Hand (👋)
+          wave: wave {
+              label = "WAVE";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F4 &kp 4 &kp B &kp SPC>;
+          };
+
+          // Pinched Fingers (🤌)
+          pinched_fingers: pinched_fingers {
+              label = "PINCHED_FINGERS";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 0 &kp C &kp SPC>;
+          };
+
+          // Sparkles (✨)
+          sparkles: sparkles {
+              label = "SPARKLES";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N2 &kp 7 &kp 2 &kp 8 &kp SPC>;
+          };
+
+          // Middle Finger (🖕)
+          middle_finger: middle_finger {
+              label = "MIDDLE_FINGER";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F5 &kp 9 &kp 5 &kp SPC>;
+          };
+
+          // Game Die (🎲)
+          dice: dice {
+              label = "DICE";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F3 &kp B &kp 2 &kp SPC>;
+          };
+
+          // Heart with Arrow (💖)
+          heart_present: heart_present {
+              label = "HEART_PRESENT";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F4 &kp 9 &kp E &kp SPC>;
+          };
+
+          // Fire (🔥)
+          fire: fire {
+              label = "FIRE";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F5 &kp 2 &kp 5 &kp SPC>;
+          };
+
+          // Down Arrow (👇)
+          point: point {
+              label = "POINT";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F4 &kp 4 &kp 7 &kp SPC>;
+          };
+
+          // Left Arrow (👈)
+          pinch2: pinch2 {
+              label = "PINCH2";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F4 &kp 4 &kp 8 &kp SPC>;
+          };
+
+          // Heart on Fire (❤️‍🔥)
+          heart_on_fire: heart_on_fire {
+              label = "HEART_ON_FIRE";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N2 &kp 7 &kp 6 &kp 4 &kp N1 &kp F9 &kp 4 &kp 6 &kp SPC>;
+          };
+
+          // Open Hands (👐)
+          palm: palm {
+              label = "PALM";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F4 &kp 5 &kp 0 &kp SPC>;
+          };
+
+          // Call Me Hand (🤙)
+          shaka: shaka {
+              label = "SHAKA";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 1 &kp 9 &kp SPC>;
+          };
+
+          // Handshake (🤝)
+          handshake: handshake {
+              label = "HANDSHAKE";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 1 &kp D &kp SPC>;
+          };
+
+          // Writing Hand (✍️)
+          writing: writing {
+              label = "WRITING";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N2 &kp 7 &kp 0 &kp D &kp SPC>;
+          };
+
+          // Flexed Biceps (💪)
+          biceps: biceps {
+              label = "BICEPS";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F4 &kp A &kp A &kp SPC>;
+          };
+
+          // Brain (🧠)
+          brain: brain {
+              label = "BRAIN";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 0 &kp A &kp SPC>;
+          };
+
+          // Face with No Good Gesture (🙅)
+          no_hands: no_hands {
+              label = "NO_HANDS";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F6 &kp 4 &kp 5 &kp SPC>;
+          };
+
+          // Facepalm (🤦)
+          facepalm: facepalm {
+              label = "FACEPALM";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              tap-ms = <0>;
+              wait-ms = <0>;
+              bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp U>,
+                         <&macro_release &kp LCTRL &kp LSHFT>,
+                         <&macro_tap &kp N1 &kp F9 &kp 1 &kp 6 &kp SPC>;
+          };
+      };
+      
     }
