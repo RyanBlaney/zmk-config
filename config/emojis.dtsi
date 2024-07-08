@@ -240,6 +240,103 @@
                        <&macro_tap &kp N1 &kp N7 &kp N6 &kp SPC>;
         };
 
+        
+        // ZZZ (💤)
+        zzz: zzz {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <0>;
+            wait-ms = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp U>,
+                       <&macro_release &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp N1 &kp F4 &kp A &kp A &kp SPC>;
+        };
+        
+        // Skull (💀)
+        skull: skull {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <0>;
+            wait-ms = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp U>,
+                       <&macro_release &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp N1 &kp N4 &kp N0 &kp N1 &kp SPC>;
+        };
+
+        // Crying Face (😢)
+        crying: crying {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <0>;
+            wait-ms = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp U>,
+                       <&macro_release &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp N1 &kp N4 &kp N2 &kp N2 &kp SPC>;
+        };
+
+        // Face Vomiting (🤮)
+        vomit: vomit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <0>;
+            wait-ms = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp U>,
+                       <&macro_release &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp N1 &kp N4 &kp N2 &kp N9 &kp SPC>;
+        };
+
+        // Face with Raised Eyebrow (🤨)
+        raised_eyebrow: raised_eyebrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <0>;
+            wait-ms = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp U>,
+                       <&macro_release &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp N1 &kp N4 &kp N2 &kp N8 &kp SPC>;
+        };
+
+        // Neutral Face (😐)
+        neutral: neutral {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <0>;
+            wait-ms = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp U>,
+                       <&macro_release &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp N1 &kp N4 &kp N2 &kp N0 &kp SPC>;
+        };
+
+        // Money-Mouth Face (🤑)
+        money: money {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <0>;
+            wait-ms = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp U>,
+                       <&macro_release &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp N1 &kp N4 &kp N2 &kp F &kp SPC>;
+        };
+
+        // Exploding Head (🤯)
+        exploding_head: exploding_head {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <0>;
+            wait-ms = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp U>,
+                       <&macro_release &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp N1 &kp N4 &kp N3 &kp N3 &kp SPC>;
+        };
+
         // Sleeping Face (😴)
         sleep: sleep {
             compatible = "zmk,behavior-macro";
@@ -421,7 +518,7 @@
         };
 
         // Pinched Fingers (🤌)
-        pinched_fingers: pinched_fingers {
+        pinch: pinch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <0>;
