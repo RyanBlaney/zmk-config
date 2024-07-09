@@ -1,0 +1,25 @@
+#include "keypos.h"
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        c_because: c_because {
+            timeout-ms = <50>;
+            key-positions = <P_E P_B>; 
+            bindings = <&m_because>;
+        };
+    };
+
+    macros {
+       compatible = "zmk,macros";
+
+       m_because: m_because {
+          wait-ms = <0>;
+          tap-ms = <10>;
+          bindings = <&kp B &kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>;
+       };
+    };
+};
+
+

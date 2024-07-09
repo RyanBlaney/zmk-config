@@ -1,0 +1,36 @@
+#pragma once
+
+#define P_Q 0
+#define P_W 1
+#define P_E 2
+#define P_R 3
+#define P_T 4
+#define P_Y 5
+#define P_U 6
+#define P_I 7
+#define P_O 8
+#define P_P 9
+#define P_A 10
+#define P_S 11
+#define P_D 12
+#define P_F 13
+#define P_G 14
+#define P_H 15
+#define P_J 16
+#define P_K 17
+#define P_L 18
+#define P_SEMI 19
+#define P_Z 20
+#define P_X 21
+#define P_C 22
+#define P_V 23
+#define P_B 24
+#define P_N 25
+#define P_M 26
+#define P_COMMA 27
+#define P_DOT 28
+#define P_SLASH 29
+#define P_LH1 30
+#define P_LH2 31
+#define P_RH1 32
+#define P_RH2 33
