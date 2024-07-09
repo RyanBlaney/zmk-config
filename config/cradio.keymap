@@ -124,7 +124,7 @@
           &bootloader  &trans     &trans  &out OUT_TOG &bt BT_SEL 1   &kp C_BASS_BOOST &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP  &kp C_RECORD
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &trans     &trans  &tog COLEMAK &bt BT_CLR &bt BT_SEL 2   &kp C_BRI_MIN &kp C_BRI_DN &kp C_BRI_UP &kp C_BRI_MAX &kp C_BKLT_TOG
+            &trans     &trans  &trans   &bt BT_CLR &bt BT_SEL 2   &kp C_BRI_MIN &kp C_BRI_DN &kp C_BRI_UP &kp C_BRI_MAX &kp C_BKLT_TOG
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
