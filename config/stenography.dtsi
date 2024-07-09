@@ -1,7 +1,7 @@
 #include "keypos.h"
 
 / {
-     macros {
+     steno_macros {
         m_because: m_because {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -11,13 +11,14 @@
          };
      };
   
-    combos {
+    steno_combos {
         compatible = "zmk,combos";
 
         c_because {
             timeout-ms = <50>;
             key-positions = <P_E P_B>; 
             bindings = <&m_because>;
+            layers = <0>;
         };
     };
 };

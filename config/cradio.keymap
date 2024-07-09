@@ -8,23 +8,22 @@
 
 
 #include "mouse.dtsi"
-#include "emojis.dtsi"
 #include "stenography.dtsi"
+#include "emojis.dtsi"
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &META LALT k2  &META LCTRL k3  &META LGUI k4
 #define HRMR(k1,k2,k3,k4) &META RGUI k1  &META RCTRL k2  &META RALT k3  &ht RSHFT k4
 
 #define DEFAULT 0
-#define COLEMAK 1
-#define NUMBER 2
-#define SYMBOL 3
-#define BLUETOOTH 4
-#define MOUSE 5
-#define NAV 6
-#define MOUSE_NUM 7
-#define EMOJI_1 8
-#define EMOJI_2 9
+#define NUMBER 1
+#define SYMBOL 2
+#define BLUETOOTH 3
+#define MOUSE 4
+#define NAV 5
+#define MOUSE_NUM 6
+#define EMOJI_1 7
+#define EMOJI_2 8
 
 #ifndef ZMK_MOUSE_DEFAULT_MOVE_VAL
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 200
@@ -61,14 +60,6 @@
         };
     };
 
-    // conditional_layers {
-    //     compatible = "zmk,conditional-layers";
-    //     tri_layer {
-    //         if-layers = <NUMBER SYMBOL>;
-    //         then-layer = <BLUETOOTH>;
-    //     };
-    // };
-
     keymap {
         compatible = "zmk,keymap";
         qwerty_layer {
@@ -82,23 +73,6 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ REPEAT   │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B         &kp N      &kp M   &kp COMMA  &key_repeat  &kp FSLH
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt SYMBOL TAB &lt NAV SPACE &lt MOUSE ENTER  &lt NUMBER BSPC
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            >;
-        };
-
-        colemak_dh_layer {
-            bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  ' "     │
-            &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp SQT
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  R       │  S       │  T       │  G       │   │  K       │  N       │  E       │  I       │  O       │
-            HRML(A,        R,         S,         T)     &kp G          &kp K      HRMR(N,        E,        I,        O)
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  D       │  V       │   │  M       │  H       │ , <      │ REPEAT   │ / ?      │
-            &kp Z      &kp X      &kp C      &kp D      &kp V         &kp M      &kp H      &kp COMMA &key_repeat &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                            &lt SYMBOL TAB &lt NAV SPACE &lt MOUSE ENTER  &lt NUMBER BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
