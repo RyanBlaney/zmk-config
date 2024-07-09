@@ -117,7 +117,7 @@
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp N1 &kp F &kp N9 &kp N7 &kp A &kp SPC>;
-        }
+        };
 
         // Party Popper (🥳)
         party: party {
