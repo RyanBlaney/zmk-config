@@ -8,7 +8,7 @@
 
 
 #include "mouse.dtsi"
-#include "stenography.dtsi"
+// #include "stenography.dtsi"
 #include "emojis.dtsi"
 
 // Home row mods macro
