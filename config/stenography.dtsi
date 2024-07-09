@@ -1,16 +1,15 @@
 #include "keypos.h"
 
 / {
-    macros {
-       compatible = "zmk,macros";
-
-       m_because: m_because {
-          #binding-cells = <0>;
-          wait-ms = <0>;
-          tap-ms = <10>;
-          bindings = <&macro_tap &kp B &kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>;
-       };
-    };
+     macros {
+        m_because: m_because {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp B &kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>;
+         };
+     };
   
     combos {
         compatible = "zmk,combos";
