@@ -70,6 +70,7 @@
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp N1 &kp F &kp N6 &kp N0 &kp N5 &kp SPC>;
+        };
 
         // Upside-Down Face (🙃)
         upside_down: upside_down {
