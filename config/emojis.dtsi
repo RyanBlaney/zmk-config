@@ -45,7 +45,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N0 &kp N7 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N0 &kp D &kp SPC>;
         };
 
         // Thinking Face (🤔)
@@ -57,7 +57,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N2 &kp N8 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N1 &kp N4 &kp SPC>;
         };
 
         // Grinning Face with Sweat (😅)
@@ -69,8 +69,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N0 &kp N5 &kp SPC>;
-        };
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N0 &kp N5 &kp SPC>;
 
         // Upside-Down Face (🙃)
         upside_down: upside_down {
@@ -81,7 +80,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N3 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N4 &kp N3 &kp SPC>;
         };
 
         // Smiling Face with Horns (😈)
@@ -92,8 +91,8 @@
             wait-ms = <0>;
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
-                       <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N0 &kp N8 &kp SPC>;
+                       <&macro_release &kp LCTRL &kp LSHFT>, 
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N0 &kp N8 &kp SPC>;
         };
 
         // Face with Hand Over Mouth (🤭)
@@ -105,8 +104,20 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N2 &kp N8 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N2 &kp D &kp SPC>;
         };
+
+        // Pleading Face (🥺)
+        pleading: pleading {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+            tap-ms = <0>;
+            wait-ms = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp U>,
+                       <&macro_release &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N7 &kp A &kp SPC>;
+        }
 
         // Party Popper (🥳)
         party: party {
@@ -117,7 +128,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N7 &kp N3 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N7 &kp N3 &kp SPC>;
         };
 
         // Star-Struck (🤩)
@@ -129,7 +140,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N2 &kp N9 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N2 &kp N9 &kp SPC>;
         };
 
         // Sob (😭)
@@ -141,7 +152,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N2 &kp N5 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N2 &kp D &kp SPC>;
         };
 
         // Smirk (😏)
@@ -153,7 +164,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N0 &kp N5 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N0 &kp F &kp SPC>;
         };
 
         // Rolling on the Floor Laughing (🤣)
@@ -165,7 +176,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N2 &kp N3 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N2 &kp N3 &kp SPC>;
         };
 
         // Grinning Face with Smiling Eyes (😄)
@@ -177,7 +188,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N0 &kp N4 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N0 &kp N4 &kp SPC>;
         };
 
         // Hugging Face (🤗)
@@ -189,7 +200,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N1 &kp N7 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N1 &kp N7 &kp SPC>;
         };
 
         // Face with Tears of Joy (😂)
@@ -201,7 +212,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N0 &kp N2 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N0 &kp N2 &kp SPC>;
         };
 
         // Face Blowing a Kiss (😘)
@@ -213,7 +224,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N8 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N1 &kp N8 &kp SPC>;
         };
 
         // Smiling Face with Hearts (🥰)
@@ -225,7 +236,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N7 &kp N0 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N7 &kp N0 &kp SPC>;
         };
 
         // Cold Face (🥶)
@@ -237,7 +248,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N7 &kp N6 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N7 &kp N6 &kp SPC>;
         };
 
         
@@ -250,7 +261,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp F4 &kp A &kp A &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N4 &kp A &kp N4 &kp SPC>;
         };
         
         // Skull (💀)
@@ -262,7 +273,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N0 &kp N1 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N4 &kp N8 &kp N0 &kp SPC>;
         };
 
         // Crying Face (😢)
@@ -274,7 +285,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N2 &kp N2 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N2 &kp N2 &kp SPC>;
         };
 
         // Face Vomiting (🤮)
@@ -286,7 +297,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N2 &kp N9 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N2 &kp E &kp SPC>;
         };
 
         // Face with Raised Eyebrow (🤨)
@@ -298,7 +309,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N2 &kp N8 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N2 &kp N8 &kp SPC>;
         };
 
         // Neutral Face (😐)
@@ -310,11 +321,11 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N2 &kp N0 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N1 &kp N0 &kp SPC>;
         };
 
         // Money-Mouth Face (🤑)
-        money: money {
+        money_mouth: money_mouth {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <0>;
@@ -322,7 +333,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N2 &kp F &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N1 &kp N1 &kp SPC>;
         };
 
         // Exploding Head (🤯)
@@ -334,7 +345,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N3 &kp N3 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N2 &kp F &kp SPC>;
         };
 
         // Sleeping Face (😴)
@@ -346,7 +357,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N3 &kp N4 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N3 &kp N4 &kp SPC>;
         };
 
         // Zany Face (🤪)
@@ -358,7 +369,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N2 &kp N9 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N2 &kp A &kp SPC>;
         };
 
         // Thumbs Up (👍)
@@ -370,7 +381,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N4 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N4 &kp N4 &kp D &kp SPC>;
         };
 
         // Thumbs Down (👎)
@@ -382,7 +393,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N5 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N4 &kp N4 &kp E &kp SPC>;
         };
 
         // Clapping Hands (👏)
@@ -394,7 +405,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N6 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N4 &kp N4 &kp F &kp SPC>;
         };
 
         // Left-Facing Fist (🤛)
@@ -406,7 +417,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N1 &kp N7 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N1 &kp B &kp SPC>;
         };
 
         // Right-Facing Fist (🤜)
@@ -418,7 +429,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N1 &kp N8 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N1 &kp C &kp SPC>;
         };
 
         // Crossed Fingers (🤞)
@@ -430,7 +441,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N1 &kp N9 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N1 &kp E &kp SPC>;
         };
 
         // Folded Hands (🙏)
@@ -442,7 +453,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N2 &kp N6 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N4 &kp F &kp SPC>;
         };
 
         // Red Heart (❤️)
@@ -466,7 +477,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N5 &kp A &kp N4 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N5 &kp A &kp N4 &kp SPC>;
         };
 
         // Heart Hands (🫶)
@@ -478,7 +489,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N7 &kp N6 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp A &kp F &kp N6 &kp SPC>;
         };
 
         // Sparkling Heart (💖)
@@ -490,7 +501,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N9 &kp N6 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N4 &kp N9 &kp N6 &kp SPC>;
         };
 
         // Raised Hands (🙌)
@@ -502,7 +513,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N2 &kp N4 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N4 &kp C &kp SPC>;
         };
 
         // Waving Hand (👋)
@@ -514,7 +525,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N4 &kp N4 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N4 &kp N4 &kp B &kp SPC>;
         };
 
         // Pinched Fingers (🤌)
@@ -526,7 +537,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N9 &kp N0 &kp C &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N0 &kp F &kp SPC>;
         };
 
         // Sparkles (✨)
@@ -550,7 +561,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N5 &kp N9 &kp N5 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N5 &kp N9 &kp N5 &kp SPC>;
         };
 
         // Game Die (🎲)
@@ -562,10 +573,10 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N3 &kp B &kp N2 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N3 &kp B &kp N2 &kp SPC>;
         };
 
-        // Heart with Arrow (💖)
+        // Heart with Arrow (💘)
         heart_present: heart_present {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -574,7 +585,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N9 &kp N4 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N4 &kp N9 &kp N8 &kp SPC>;
         };
 
         // Fire (🔥)
@@ -586,11 +597,11 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N5 &kp N2 &kp N5 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N5 &kp N2 &kp N5 &kp SPC>;
         };
 
         // Down Arrow (👇)
-        point: point {
+        point_down: point_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <0>;
@@ -598,11 +609,11 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N4 &kp N7 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F&kp N4 &kp N4 &kp N7 &kp SPC>;
         };
 
-        // Left Arrow (👈)
-        pinch2: pinch2 {
+        // Left pointer (👈)
+        point_left: point_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <0>;
@@ -610,11 +621,11 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N4 &kp N8 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N4 &kp N4 &kp N8 &kp SPC>;
         };
 
-        // Heart on Fire (❤️‍🔥)
-        heart_on_fire: heart_on_fire {
+        // Left pointer (👈)
+        point_up: point_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <0>;
@@ -622,9 +633,9 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N2 &kp N7 &kp N6 &kp N4 &kp N1 &kp N9 &kp N4 &kp N6 &kp SPC>;
+                       <&macro_tap &kp N2 &kp N6 &kp N1 &kp D &kp SPC>;
         };
-
+        
         // Open Hands (👐)
         palm: palm {
             compatible = "zmk,behavior-macro";
@@ -634,7 +645,19 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N5 &kp N0 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N4 &kp N5 &kp N0 &kp SPC>;
+        };
+
+        // Metal
+        palm: palm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <0>;
+            wait-ms = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp U>,
+                       <&macro_release &kp LCTRL &kp LSHFT>,
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N1 &kp N8 &kp SPC>;
         };
 
         // Call Me Hand (🤙)
@@ -646,7 +669,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N9 &kp N9 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N1 &kp N9 &kp SPC>;
         };
 
         // Handshake (🤝)
@@ -658,7 +681,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N1 &kp N9 &kp D &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N1 &kp D &kp SPC>;
         };
 
         // Writing Hand (✍️)
@@ -682,7 +705,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N0 &kp N0 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N4 &kp A &kp A &kp SPC>;
         };
 
         // Brain (🧠)
@@ -694,7 +717,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N9 &kp N0 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp E &kp N0 &kp SPC>;
         };
 
         // Face with No Good Gesture (🙅)
@@ -706,7 +729,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N4 &kp N5 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N6 &kp N4 &kp N5 &kp SPC>;
         };
 
         // Facepalm (🤦)
@@ -718,7 +741,7 @@
             bindings = <&macro_press &kp LCTRL &kp LSHFT>,
                        <&macro_tap &kp U>,
                        <&macro_release &kp LCTRL &kp LSHFT>,
-                       <&macro_tap &kp N1 &kp N7 &kp N6 &kp SPC>;
+                       <&macro_tap &kp N1 &kp F &kp N9 &kp N2 &kp N6 &kp SPC>;
         };
     };
 };
