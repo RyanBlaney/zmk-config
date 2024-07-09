@@ -5,6 +5,7 @@
         compatible = "zmk,combos";
 
         c_because: c_because {
+            #binding-cells = <0>;
             timeout-ms = <50>;
             key-positions = <P_E P_B>; 
             bindings = <&m_because>;
