@@ -92,7 +92,7 @@
 
         m_instruct: m_instruct {
             compatible = "zmk,behavior-macro";
-            #bindings-cells = <0>;
+            #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = <&macro_tap &kp I &kp N &kp S &kp T &kp R &kp U &kp C &kp T>;
@@ -100,7 +100,7 @@
 
         m_syllable: m_syllable {
             compatible = "zmk,behavior-macro";
-            #bindings-cells = <0>;
+            #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = <&macro_tap &kp S &kp Y &kp L &kp L &kp A &kp B &kp L &kp E>;
@@ -108,7 +108,7 @@
 
         m_mountain: m_mountain {
             compatible = "zmk,behavior-macro";
-            #bindings-cells = <0>;
+            #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = <&macro_tap &kp M &kp O &kp U &kp N &kp T &kp A &kp I &kp N>;
@@ -120,6 +120,14 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = <&macro_tap &kp P &kp A &kp R &kp T &kp I &kp C &kp U &kp L &kp A &kp R>;
+        };
+
+        m_const: m_const {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp C &kp O &kp N &kp S &kp T>;
         };
      };
   
@@ -228,6 +236,13 @@
             timeout-ms = <50>;
             key-positions = <P_P P_A P_R P_T>;
             bindings = <&m_particular>;
+            layers = <0>;
+        };
+
+        c_const {
+            timeout-ms = <50>;
+            key-positions = <P_C P_O P_N P_S P_T>;
+            bindings = <&m_const>;
             layers = <0>;
         };
     };
