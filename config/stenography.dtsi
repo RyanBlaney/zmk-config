@@ -203,7 +203,7 @@
             layers = <0>;
         };
 
-        c_instructor {
+        c_instruct {
             timeout-ms = <50>;
             key-positions = <P_I P_N P_S P_T P_U>;
             bindings = <&m_instruct>;
