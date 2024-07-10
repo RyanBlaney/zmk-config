@@ -202,12 +202,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp O>,
-                      <&macro_tap &kp U>,
-                      <&macro_tap &kp T>,
-                      <&macro_tap &kp P>,
-                      <&macro_tap &kp U>,
-                      <&macro_tap &kp T>;
+          bindings = <&macro_tap &kp O &kp U &kp T &kp P &kp U &kp T>;
         };
 
         m_written: m_written {
@@ -215,13 +210,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp W>,
-                      <&macro_tap &kp R>,
-                      <&macro_tap &kp I>,
-                      <&macro_tap &kp T>,
-                      <&macro_tap &kp T>,
-                      <&macro_tap &kp E>,
-                      <&macro_tap &kp N>;
+          bindings = <&macro_tap &kp W &kp R &kp I &kp T &kp T &kp E &kp N>;
         };
 
         m_brown: m_brown {
@@ -229,11 +218,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp B>,
-                      <&macro_tap &kp R>,
-                      <&macro_tap &kp O>,
-                      <&macro_tap &kp W>,
-                      <&macro_tap &kp N>;
+          bindings = <&macro_tap &kp B &kp R &kp O &kp W &kp N>;
         };
 
         m_remember: m_remember {
@@ -241,14 +226,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp R>,
-                      <&macro_tap &kp E>,
-                      <&macro_tap &kp M>,
-                      <&macro_tap &kp E>,
-                      <&macro_tap &kp M>,
-                      <&macro_tap &kp B>,
-                      <&macro_tap &kp E>,
-                      <&macro_tap &kp R>;
+          bindings = <&macro_tap &kp R &kp E &kp M &kp E &kp M &kp B &kp E &kp R>;
         };
 
         m_tion: m_tion {
@@ -256,10 +234,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp T>,
-                      <&macro_tap &kp I>,
-                      <&macro_tap &kp O>,
-                      <&macro_tap &kp N>;
+          bindings = <&macro_tap &kp T &kp I &kp O &kp N>;
         };
 
         m_condition: m_condition {
@@ -267,15 +242,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp C>,
-                      <&macro_tap &kp O>,
-                      <&macro_tap &kp N>,
-                      <&macro_tap &kp D>,
-                      <&macro_tap &kp I>,
-                      <&macro_tap &kp T>,
-                      <&macro_tap &kp I>,
-                      <&macro_tap &kp O>,
-                      <&macro_tap &kp N>;
+          bindings = <&macro_tap &kp C &kp O &kp N &kp D &kp I &kp T &kp I &kp O &kp N>;
         };
 
         m_cond: m_cond {
@@ -283,10 +250,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp C>,
-                      <&macro_tap &kp O>,
-                      <&macro_tap &kp N>,
-                      <&macro_tap &kp D>;
+          bindings = <&macro_tap &kp C &kp O &kp N &kp D>;
         };
 
         m_represent: m_represent {
@@ -294,15 +258,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp R>,
-                      <&macro_tap &kp E>,
-                      <&macro_tap &kp P>,
-                      <&macro_tap &kp R>,
-                      <&macro_tap &kp E>,
-                      <&macro_tap &kp S>,
-                      <&macro_tap &kp E>,
-                      <&macro_tap &kp N>,
-                      <&macro_tap &kp T>;
+          bindings = <&macro_tap &kp R &kp E &kp P &kp R &kp E &kp S &kp E &kp N &kp T>;
         };
 
         m_circle: m_circle {
@@ -310,12 +266,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp C>,
-                      <&macro_tap &kp I>,
-                      <&macro_tap &kp R>,
-                      <&macro_tap &kp C>,
-                      <&macro_tap &kp L>,
-                      <&macro_tap &kp E>;
+          bindings = <&macro_tap &kp C &kp I &kp R &kp C &kp L &kp E>;
         };
 
         m_design: m_design {
@@ -323,12 +274,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp D>,
-                      <&macro_tap &kp E>,
-                      <&macro_tap &kp S>,
-                      <&macro_tap &kp I>,
-                      <&macro_tap &kp G>,
-                      <&macro_tap &kp N>;
+          bindings = <&macro_tap &kp D &kp E &kp S &kp I &kp G &kp N>;
         };
 
         m_insta: m_insta {
@@ -336,11 +282,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp I>,
-                      <&macro_tap &kp N>,
-                      <&macro_tap &kp S>,
-                      <&macro_tap &kp T>,
-                      <&macro_tap &kp A>;
+          bindings = <&macro_tap &kp I &kp N &kp S &kp T &kp A>;
         };
 
         m_substan: m_substan {
@@ -348,13 +290,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp S>,
-                      <&macro_tap &kp U>,
-                      <&macro_tap &kp B>,
-                      <&macro_tap &kp S>,
-                      <&macro_tap &kp T>,
-                      <&macro_tap &kp A>,
-                      <&macro_tap &kp N>;
+          bindings = <&macro_tap &kp S &kp U &kp B &kp S &kp T &kp A &kp N>;
         };
 
         m_original: m_original {
@@ -362,14 +298,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp O>,
-                      <&macro_tap &kp R>,
-                      <&macro_tap &kp I>,
-                      <&macro_tap &kp G>,
-                      <&macro_tap &kp I>,
-                      <&macro_tap &kp N>,
-                      <&macro_tap &kp A>,
-                      <&macro_tap &kp L>;
+          bindings = <&macro_tap &kp O &kp R &kp I &kp G &kp I &kp N &kp A &kp L>;
         };
 
         m_piece: m_piece {
@@ -377,11 +306,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp P>,
-                      <&macro_tap &kp I>,
-                      <&macro_tap &kp E>,
-                      <&macro_tap &kp C>,
-                      <&macro_tap &kp E>;
+          bindings = <&macro_tap &kp P &kp I &kp E &kp C &kp E>;
         };
 
         m_difference: m_difference {
@@ -389,16 +314,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp D>,
-                      <&macro_tap &kp I>,
-                      <&macro_tap &kp F>,
-                      <&macro_tap &kp F>,
-                      <&macro_tap &kp E>,
-                      <&macro_tap &kp R>,
-                      <&macro_tap &kp E>,
-                      <&macro_tap &kp N>,
-                      <&macro_tap &kp C>,
-                      <&macro_tap &kp E>;
+          bindings = <&macro_tap &kp D &kp I &kp F &kp F &kp E &kp R &kp E &kp N &kp C &kp E>;
         };
 
         m_differential: m_differential {
@@ -406,18 +322,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp D>,
-                      <&macro_tap &kp I>,
-                      <&macro_tap &kp F>,
-                      <&macro_tap &kp F>,
-                      <&macro_tap &kp E>,
-                      <&macro_tap &kp R>,
-                      <&macro_tap &kp E>,
-                      <&macro_tap &kp N>,
-                      <&macro_tap &kp T>,
-                      <&macro_tap &kp I>,
-                      <&macro_tap &kp A>,
-                      <&macro_tap &kp L>;
+          bindings = <&macro_tap &kp D &kp I &kp F &kp F &kp E &kp R &kp E &kp N &kp T &kp I &kp L>;
         };
      };
   
@@ -587,7 +492,7 @@
 
         c_create {
             timeout-ms = <50>;
-            key-positions = <P_C P_R P_E P_A P_T>;
+            key-positions = <P_C P_R P_E P_T>;
             bindings = <&m_create>;
             layers = <0>;
         };
