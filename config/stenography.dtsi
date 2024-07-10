@@ -498,112 +498,112 @@
         };
 
         c_output {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_O P_U P_T P_P>;
             bindings = <&m_output>;
             layers = <0>;
         };
 
         c_written {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_W P_R P_I P_T P_N>;
             bindings = <&m_written>;
             layers = <0>;
         };
 
         c_brown {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_B P_R P_O P_W P_N>;
             bindings = <&m_brown>;
             layers = <0>;
         };
 
         c_remember {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_R P_M P_B>;
             bindings = <&m_remember>;
             layers = <0>;
         };
 
         c_tion {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_T P_I P_O P_N>;
             bindings = <&m_tion>;
             layers = <0>;
         };
 
         c_condition {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_C P_O P_N P_D P_I>;
             bindings = <&m_condition>;
             layers = <0>;
         };
 
         c_cond {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_C P_O P_N P_D>;
             bindings = <&m_cond>;
             layers = <0>;
         };
 
         c_represent {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_R P_E P_P P_S>;
             bindings = <&m_represent>;
             layers = <0>;
         };
 
         c_circle {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_C P_I P_R P_L P_E>;
             bindings = <&m_circle>;
             layers = <0>;
         };
 
         c_design {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_D P_E P_S P_I P_G P_N>;
             bindings = <&m_design>;
             layers = <0>;
         };
 
         c_insta {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_I P_N P_S P_T P_A>;
             bindings = <&m_insta>;
             layers = <0>;
         };
 
         c_substan {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_S P_U P_B P_T>;
             bindings = <&m_substan>;
             layers = <0>;
         };
 
         c_original {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_O P_G>;
             bindings = <&m_original>;
             layers = <0>;
         };
 
         c_piece {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_P P_I P_E P_C>;
             bindings = <&m_piece>;
             layers = <0>;
         };
 
         c_difference {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_D P_I P_F>;
             bindings = <&m_difference>;
             layers = <0>;
         };
 
         c_differential {
-            timeout-ms = <0>;
+            timeout-ms = <50>;
             key-positions = <P_D P_I P_F P_L>;
             bindings = <&m_differential>;
             layers = <0>;
