@@ -10,12 +10,12 @@
             bindings = <&macro_tap &kp B &kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>;
         };
 
-        m_necessary: m_necessary {
+        m_necessar: m_necessar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <10>;
-            bindings = <&macro_tap &kp N &kp E &kp C &kp E &kp S &kp S &kp A &kp R &kp Y &kp SPACE>;
+            bindings = <&macro_tap &kp N &kp E &kp C &kp E &kp S &kp S &kp A &kp R>;
         };
 
         m_experience: m_experience {
@@ -87,7 +87,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <10>;
-            bindings = <&macro_tap &kp E &kp X &kp R &kp E &kp S &kp S>;
+            bindings = <&macro_tap &kp E &kp X &kp P &kp R &kp E &kp S &kp S>;
         };
 
         m_instruct: m_instruct {
@@ -129,6 +129,57 @@
             tap-ms = <10>;
             bindings = <&macro_tap &kp C &kp O &kp N &kp S &kp T>;
         };
+
+        m_ion: m_ion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp I &kp O &kp N>;
+        };
+
+        m_position: m_position {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp P &kp O &kp S &kp I &kp T &kp I &kp O &kp N>;
+        };
+
+        m_comp: m_comp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp C &kp O &kp M &kp P>;
+        }
+
+        m_Documents: m_Documents {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_press &kp LSHFT>,
+                       <&macro_tap &kp D>,
+                       <&macro_release &kp LSHIFT>,
+                       <&macro_tap &kp O &kp C &kp U &kp M &kp E &kp N &kp T &kp S>;
+        };
+
+        m_document: m_document {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp D &kp O &kp C &kp U &kp M &kp E &kp N &kp T>;
+        }
+
+        m_tmux: m_tmux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp T &kp M &kp U &kp X>;
+        }
      };
   
     steno_combos {
@@ -141,10 +192,10 @@
             layers = <0>;
         };
 
-        c_necessary {
+        c_necessar {
             timeout-ms = <50>;
             key-positions = <P_N P_E P_C>; 
-            bindings = <&m_necessary>;
+            bindings = <&m_necessar>;
             layers = <0>;
         };
 
@@ -243,6 +294,48 @@
             timeout-ms = <50>;
             key-positions = <P_C P_O P_N P_S P_T>;
             bindings = <&m_const>;
+            layers = <0>;
+        };
+
+        c_ion {
+            timeout-ms = <50>;
+            key-positions = <P_I P_O P_N>;
+            bindings = <&m_ion>;
+            layers = <0>;
+        };
+
+        c_position {
+            timeout-ms = <50>;
+            key-positions = <P_P P_O P_S>;
+            bindings = <&m_position>;
+            layers = <0>;
+        };
+
+        c_comp {
+            timeout-ms = <50>;
+            key-positions = <P_C P_O P_M P_P>;
+            bindings = <&m_comp>;
+            layers = <0>;
+        };
+
+        c_Documents {
+            timeout-ms = <50>;
+            key-positions = <P_D P_O P_C P_SEMI>;
+            bindings = <&m_Documents>;
+            layers = <0>;
+        };
+
+        c_document {
+            timeout-ms = <50>;
+            key-positions = <P_D P_O P_C>;
+            bindings = <&m_document>;
+            layers = <0>;
+        };
+
+        c_tmux {
+            timeout-ms = <50>;
+            key-positions = <P_T P_M P_X>;
+            bindings = <&m_tmux>;
             layers = <0>;
         };
     };
