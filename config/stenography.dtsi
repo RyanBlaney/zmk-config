@@ -478,14 +478,14 @@
 
         c_process {
             timeout-ms = <50>;
-            key-position = <P_P P_R P_O P_C P_S>;
+            key-positions = <P_P P_R P_O P_C P_S>;
             bindings = <&m_process>;
             layers = <0>;
         };
 
         c_create {
             timeout-ms = <50>;
-            key-position = <P_C P_R P_E P_A P_T>;
+            key-positions = <P_C P_R P_E P_A P_T>;
             bindings = <&m_create>;
             layers = <0>;
         };
