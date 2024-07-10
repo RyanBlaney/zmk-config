@@ -152,7 +152,7 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = <&macro_tap &kp C &kp O &kp M &kp P>;
-        }
+        };
 
         m_Documents: m_Documents {
             compatible = "zmk,behavior-macro";
