@@ -317,6 +317,108 @@
                       <&macro_tap &kp L>,
                       <&macro_tap &kp E>;
         };
+
+        m_design: m_design {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <0>;
+          tap-ms = <10>;
+          bindings = <&macro_tap &kp D>,
+                      <&macro_tap &kp E>,
+                      <&macro_tap &kp S>,
+                      <&macro_tap &kp I>,
+                      <&macro_tap &kp G>,
+                      <&macro_tap &kp N>;
+        };
+
+        m_insta: m_insta {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <0>;
+          tap-ms = <10>;
+          bindings = <&macro_tap &kp I>,
+                      <&macro_tap &kp N>,
+                      <&macro_tap &kp S>,
+                      <&macro_tap &kp T>,
+                      <&macro_tap &kp A>;
+        };
+
+        m_substan: m_substan {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <0>;
+          tap-ms = <10>;
+          bindings = <&macro_tap &kp S>,
+                      <&macro_tap &kp U>,
+                      <&macro_tap &kp B>,
+                      <&macro_tap &kp S>,
+                      <&macro_tap &kp T>,
+                      <&macro_tap &kp A>,
+                      <&macro_tap &kp N>;
+        };
+
+        m_original: m_original {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <0>;
+          tap-ms = <10>;
+          bindings = <&macro_tap &kp O>,
+                      <&macro_tap &kp R>,
+                      <&macro_tap &kp I>,
+                      <&macro_tap &kp G>,
+                      <&macro_tap &kp I>,
+                      <&macro_tap &kp N>,
+                      <&macro_tap &kp A>,
+                      <&macro_tap &kp L>;
+        };
+
+        m_piece: m_piece {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <0>;
+          tap-ms = <10>;
+          bindings = <&macro_tap &kp P>,
+                      <&macro_tap &kp I>,
+                      <&macro_tap &kp E>,
+                      <&macro_tap &kp C>,
+                      <&macro_tap &kp E>;
+        };
+
+        m_difference: m_difference {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <0>;
+          tap-ms = <10>;
+          bindings = <&macro_tap &kp D>,
+                      <&macro_tap &kp I>,
+                      <&macro_tap &kp F>,
+                      <&macro_tap &kp F>,
+                      <&macro_tap &kp E>,
+                      <&macro_tap &kp R>,
+                      <&macro_tap &kp E>,
+                      <&macro_tap &kp N>,
+                      <&macro_tap &kp C>,
+                      <&macro_tap &kp E>;
+        };
+
+        m_differential: m_differential {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <0>;
+          tap-ms = <10>;
+          bindings = <&macro_tap &kp D>,
+                      <&macro_tap &kp I>,
+                      <&macro_tap &kp F>,
+                      <&macro_tap &kp F>,
+                      <&macro_tap &kp E>,
+                      <&macro_tap &kp R>,
+                      <&macro_tap &kp E>,
+                      <&macro_tap &kp N>,
+                      <&macro_tap &kp T>,
+                      <&macro_tap &kp I>,
+                      <&macro_tap &kp A>,
+                      <&macro_tap &kp L>;
+        };
      };
   
     steno_combos {
@@ -550,6 +652,55 @@
           timeout-ms = <0>;
           key-positions = <P_C P_I P_R P_L P_E>;
           bindings = <&m_circle>;
+          layers = <0>;
+        };
+
+        c_design {
+          timeout-ms = <0>;
+          key-positions = <P_D P_E P_S P_I P_G P_N>;
+          bindings = <&m_design>;
+          layers = <0>;
+        };
+
+        c_insta {
+          timeout-ms = <0>;
+          key-positions = <P_I P_N P_S P_T P_A>;
+          bindings = <&m_insta>;
+          layers = <0>;
+        };
+
+        c_substan {
+          timeout-ms = <0>;
+          key-positions = <P_S P_U P_B P_T>;
+          bindings = <&m_substan>;
+          layers = <0>;
+        };
+
+        c_original {
+          timeout-ms = <0>;
+          key-positions = <P_O P_G>;
+          bindings = <&m_original>;
+          layers = <0>;
+        };
+
+        c_piece {
+          timeout-ms = <0>;
+          key-positions = <P_P P_I P_E P_C>;
+          bindings = <&m_piece>;
+          layers = <0>;
+        };
+
+        c_difference {
+          timeout-ms = <0>;
+          key-positions = <P_D P_I P_F>;
+          bindings = <&m_difference>;
+          layers = <0>;
+        };
+
+        c_differential {
+          timeout-ms = <0>;
+          key-positions = <P_D P_I P_F P_L>;
+          bindings = <&m_differential>;
           layers = <0>;
         };
     };
