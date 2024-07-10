@@ -64,7 +64,7 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = <&macro_tap &kp T &kp E &kp M &kp P &kp E &kp R &kp A &kp T &kp U &kp R &kp E>;
-        }
+        };
 
         m_brother: m_brother {
             compatible = "zmk,behavior-macro";
@@ -72,7 +72,7 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = <&macro_tap &kp B &kp R &kp O &kp T &kp H &kp E &kp R>;
-        }
+        };
 
         m_sister: m_sister {
             compatible = "zmk,behavior-macro";
@@ -80,7 +80,7 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = <&macro_tap &kp S &kp I &kp S &kp T &kp E &kp R>;
-        }
+        };
 
         m_express: m_express {
             compatible = "zmk,behavior-macro";
@@ -88,35 +88,39 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = <&macro_tap &kp E &kp X &kp R &kp E &kp S &kp S>;
-        }
+        };
 
         m_instruct: m_instruct {
             compatible = "zmk,behavior-macro";
             #bindings-cells = <0>;
             wait-ms = <0>;
+            tap-ms = <10>;
             bindings = <&macro_tap &kp I &kp N &kp S &kp T &kp R &kp U &kp C &kp T>;
-        }
+        };
 
         m_syllable: m_syllable {
             compatible = "zmk,behavior-macro";
             #bindings-cells = <0>;
             wait-ms = <0>;
+            tap-ms = <10>;
             bindings = <&macro_tap &kp S &kp Y &kp L &kp L &kp A &kp B &kp L &kp E>;
-        }
+        };
 
         m_mountain: m_mountain {
             compatible = "zmk,behavior-macro";
             #bindings-cells = <0>;
             wait-ms = <0>;
+            tap-ms = <10>;
             bindings = <&macro_tap &kp M &kp O &kp U &kp N &kp T &kp A &kp I &kp N>;
-        }
+        };
 
         m_particular: m_particular {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
+            tap-ms = <10>;
             bindings = <&macro_tap &kp P &kp A &kp R &kp T &kp I &kp C &kp U &kp L &kp A &kp R>;
-        }
+        };
      };
   
     steno_combos {
@@ -183,49 +187,49 @@
             key-positions = <P_B P_R P_O>;
             bindings = <&m_brother>;
             layers = <0>;
-        }
+        };
 
         c_sister {
             timeout-ms = <50>;
             key-positions = <P_S P_I P_R P_T>;
             bindings = <&m_sister>;
             layers = <0>;
-        }
+        };
 
         c_express {
             timeout-ms = <50>;
             key-positions = <P_E P_X P_S>;
             bindings = <&m_express>;
             layers = <0>;
-        }
+        };
 
         c_instructor {
             timeout-ms = <50>;
             key-positions = <P_I P_N P_S P_T P_U>;
             bindings = <&m_instruct>;
             layers = <0>;
-        }
+        };
 
         c_syllable {
             timeout-ms = <50>;
             key-positions = <P_S P_Y P_L P_A>;
             bindings = <&m_syllable>;
             layers = <0>;
-        }
+        };
 
         c_mountain {
             timeout-ms = <50>;
             key-positions = <P_M P_O P_U P_T P_A>;
             bindings = <&m_mountain>;
             layers = <0>;
-        }
+        };
 
         c_particular {
             timeout-ms = <50>;
             key-positions = <P_P P_A P_R P_T>;
             bindings = <&m_particular>;
             layers = <0>;
-        }
+        };
     };
 };
 
