@@ -2,6 +2,54 @@
 
 / {
     steno_macros {
+      m_large: m_large {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <10>;
+        bindings = <&macro_tap &kp L &kp A &kp R &kp G &kp E>;
+      };
+
+      m_progress: m_progress {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <10>;
+        bindings = <&macro_tap &kp P &kp R &kp O &kp G &kp R &kp E &kp S &kp S>;
+      };
+
+      m_program: m_program {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <10>;
+        bindings = <&macro_tap &kp P &kp R &kp O &kp G &kp R &kp A &kp M>;
+      };
+
+      m_follow: m_follow {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <10>;
+        bindings = <&macro_tap &kp F &kp O &kp L &kp L &kp O &kp W>;
+      };
+
+      m_genera: m_genera {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <10>;
+        bindings = <&macro_tap &kp G &kp E &kp N &kp E &kp R &kp A>;
+      };
+
+      m_consider: m_consider {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <10>;
+        bindings = <&macro_tap &kp C &kp O &kp N &kp S &kp I &kp D &kp E &kp R>;
+      };
+
       m_public: m_public {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
@@ -327,6 +375,48 @@
 
     steno_combos {
       compatible = "zmk,combos";
+      c_large {
+        timeout-ms = <50>;
+        key-positions = <P_L P_R P_G>;
+        bindings = <&m_large>;
+        layers = <0>;
+      };
+
+      c_progress {
+        timeout-ms = <50>;
+        key-positions = <P_P P_R P_G P_S>;
+        bindings = <&m_progress>;
+        layers = <0>;
+      };
+
+      c_program {
+        timeout-ms = <50>;
+        key-positions = <P_P P_R P_G>;
+        bindings = <&m_program>;
+        layers = <0>;
+      };
+
+      c_follow {
+        timeout-ms = <50>;
+        key-positions = <P_F P_O P_L>;
+        bindings = <&m_follow>;
+        layers = <0>;
+      };
+
+      c_genera {
+        timeout-ms = <50>;
+        key-positions = <P_G P_E P_N>;
+        bindings = <&m_genera>;
+        layers = <0>;
+      };
+
+      c_consider {
+        timeout-ms = <50>;
+        key-positions = <P_C P_O P_N P_S>;
+        bindings = <&m_consider>;
+        layers = <0>;
+      };
+
       c_public {
         timeout-ms = <50>;
         key-positions = <P_P P_U P_B>;
@@ -606,6 +696,7 @@
         bindings = <&m_ization_>;
         layers = <0>;
       };
-      
+
+  
     };
 };
