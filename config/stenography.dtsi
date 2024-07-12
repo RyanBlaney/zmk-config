@@ -1142,7 +1142,7 @@
           bindings = <&macro_tap &kp LSHFT &kp A &kp LSHFT &kp N &kp G &kp E &kp L &kp SPACE>;
         };
 
-        m_Amiya's_: m_Amiya's_ {
+        m_Amiyas_: m_Amiyas_ {
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
           wait-ms = <0>;
@@ -2509,10 +2509,10 @@
           layers = <0>;
         };
 
-        c_Amiya's_ {
+        c_Amiyas_ {
           timeout-ms = <50>;
           key-positions = <P_A P_M P_I P_Y P_COMMA>;
-          bindings = <&m_Amiya's_>;
+          bindings = <&m_Amiyas_>;
           layers = <0>;
         };
 
