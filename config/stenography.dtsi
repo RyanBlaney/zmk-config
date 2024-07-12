@@ -1147,7 +1147,7 @@
           #binding-cells = <0>;
           wait-ms = <0>;
           tap-ms = <10>;
-          bindings = <&macro_tap &kp LSHFT &kp A &kp LSHFT &kp M &kp I &kp Y &kp A &kp LSHFT &kp ' &kp LSHFT &kp S &kp SPACE>;
+          bindings = <&macro_tap &kp LSHFT &kp A &kp LSHFT &kp M &kp I &kp Y &kp A &kp LSHFT &kp SQT &kp LSHFT &kp S &kp SPACE>;
         };
 
         m_Amiya_: m_Amiya_ {
