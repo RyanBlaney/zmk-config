@@ -126,14 +126,14 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│   {      │  &       │  *       │  (       │   [      │   │  ^       │  (       │  )       │  ]       │  ~       
-            &kp LBRC    &kp AMPS  &kp ASTRK  &kp LPAR  &kp LBKT       &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
+        //│   {      │  &       │  *       │  (       │   [      │   │  ;       │  =       │  LT      │  GT      │  ~       
+            &kp LBRC    &kp AMPS  &kp ASTRK  &kp LPAR  &kp LBKT       &kp SEMI  &kp EQUAL   &kp LT   &kp GT   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  )       │  $       │  %       │  ^       │  _       │   │  /       │  ,       │  |       │  \       │  `       │
            HRML(RPAR,  DLLR,       PRCNT,     CARET)    &kp UNDER      &kp FSLH  HRMR(COMMA,  PIPE,     BSLH,     GRAVE)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ]       │  !       │  @       │ #        │   }      │   │  -       │  .       │  +       │ SPACE    │          │
-            &kp RBKT  &kp EXCL    &kp AT     &kp HASH    &kp RBRC     &kp MINUS   &kp DOT    &kp PLUS   &kp SPACE  &trans
+        //│  ]       │  !       │  @       │ #        │   }      │   │  -       │  .       │ ENTER    │ SPACE    │          │
+            &kp RBKT  &kp EXCL    &kp AT     &kp HASH    &kp RBRC     &kp MINUS   &kp DOT    &kp ENTER   &kp SPACE  &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans      &lt MOUSE ENTER &key_repeat
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -167,7 +167,7 @@
            &kp A      &kp S      &kp D      &kp F      &mkp LCLK      &mkp MCLK  U_MS_L     U_MS_D     U_MS_U     U_MS_R 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-          &ht LSHFT Z &ht LALT X &ht LCTRL C &kp TAB  &mkp RCLK       &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &lt MOUSE_NUM ESC
+          &ht LSHFT Z &ht LALT X &ht LCTRL C &kp TAB   &kp ESC       &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &lt MOUSE_NUM ESC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &tog MOUSE &kp SPACE      &dec_sens  &inc_sens
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
