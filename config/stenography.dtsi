@@ -2,851 +2,213 @@
 
 / {
     steno_macros {
-      m_world: m_world {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp W &kp O &kp R &kp L &kp D>;
-      };
+        m_tmux: m_tmux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp B>,
+                <&macro_press &kp LCTRL>,
+        };
 
-      m_around: m_around {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp A &kp R &kp O &kp U &kp N &kp D>;
-      };
+        m_vimpaste: m_vimpaste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp ESC &kp P>,
+        };
 
-      m_chang: m_chang {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp C &kp H &kp A &kp N &kp G>;
-      };
+        m_zero: m_zero {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp N0>,
+        };
 
-      m_know: m_know {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp K &kp N &kp O &kp W>;
-      };
+        m_one: m_one {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp N1>,
+        };
 
-      m_leave: m_leave {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp L &kp E &kp A &kp V &kp E>;
-      };
+        m_two: m_two {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp N2>,
+        };
 
-      m_think: m_think {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp T &kp H &kp I &kp N &kp K>;
-      };
+        m_three: m_three {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp N3>,
+        };
 
-      m_decreas: m_decreas {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp D &kp E &kp C &kp R &kp E &kp A &kp S>;
-      };
+        m_four: m_four {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp N4>,
+        };
 
-      m_increas: m_increas {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp I &kp N &kp C &kp R &kp E &kp A &kp S>;
-      };
+        m_five: m_five {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp N5>,
+        };
 
-      m_large: m_large {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp L &kp A &kp R &kp G &kp E>;
-      };
+        m_six: m_six {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp N6>,
+        };
 
-      m_progress: m_progress {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp P &kp R &kp O &kp G &kp R &kp E &kp S &kp S>;
-      };
+        m_seven: m_seven {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp N7>,
+        };
 
-      m_program: m_program {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp P &kp R &kp O &kp G &kp R &kp A &kp M>;
-      };
+        m_eight: m_eight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp N8>,
+        };
 
-      m_follow: m_follow {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp F &kp O &kp L &kp L &kp O &kp W>;
-      };
-
-      m_genera: m_genera {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp G &kp E &kp N &kp E &kp R &kp A>;
-      };
-
-      m_consider: m_consider {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp C &kp O &kp N &kp S &kp I &kp D &kp E &kp R>;
-      };
-
-      m_public: m_public {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp P &kp U &kp B &kp L &kp I &kp C>;
-      };
-
-      m_another_: m_another_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp A &kp N &kp O &kp T &kp H &kp E &kp R &kp SPACE>;
-      };
-
-      m_however_: m_however_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp H &kp O &kp W &kp E &kp V &kp E &kp R &kp SPACE>;
-      };
-
-      m_like: m_like {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp L &kp I &kp K &kp E>;
-      };
-
-      m_school: m_school {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp S &kp C &kp H &kp O &kp O &kp L>;
-      };
-
-      m_against_: m_against_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp A &kp G &kp A &kp I &kp N &kp S &kp T &kp SPACE>;
-      };
-
-      m_professor_: m_professor_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp P &kp R &kp O &kp F &kp E &kp S &kp S &kp O &kp R &kp SPACE>;
-      };
-
-      m_professional: m_professional {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp P &kp R &kp O &kp F &kp E &kp S &kp S &kp I &kp O &kp N &kp A &kp L>;
-      };
-
-      m_information: m_information {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp I &kp N &kp F &kp O &kp R &kp M &kp A &kp T &kp I &kp O &kp N>;
-      };
-
-      m_experience: m_experience {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp E &kp X &kp P &kp E &kp R &kp I &kp E &kp N &kp C &kp E>;
-      };
-
-      m_because_: m_because_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp B &kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>;
-      };
-
-      m_development: m_development {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp D &kp E &kp V &kp E &kp L &kp O &kp P &kp M &kp E &kp N &kp T>;
-      };
-
-      m_govern: m_govern {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp G &kp O &kp V &kp E &kp R &kp N>;
-      };
-
-      m_government_: m_government_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp G &kp O &kp V &kp E &kp R &kp N &kp M &kp E &kp N &kp T &kp SPACE>;
-      };
-
-      m_example: m_example {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp E &kp X &kp A &kp M &kp P &kp L &kp E>;
-      };
-
-      m_important: m_important {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp I &kp M &kp P &kp O &kp R &kp T &kp A &kp N &kp T>;
-      };
-
-      m_difference_: m_difference_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp D &kp I &kp F &kp F &kp E &kp R &kp E &kp N &kp C &kp E &kp SPACE>;
-      };
-
-      m_different_: m_different_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp D &kp I &kp F &kp F &kp E &kp R &kp E &kp N &kp T &kp SPACE>;
-      };
-
-      m_between_: m_between_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp B &kp E &kp T &kp W &kp E &kp E &kp N &kp SPACE>;
-      };
-
-      m_ous: m_ous {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp O &kp U &kp S>;
-      };
-
-      m_ment: m_ment {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp M &kp E &kp N &kp T>;
-      };
-
-      m_ing: m_ing {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp I &kp N &kp G>;
-      };
-
-      m_ness: m_ness {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp N &kp E &kp S &kp S>;
-      };
-
-      m_post: m_post {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp P &kp O &kp S &kp T>;
-      };
-
-      m_pre: m_pre {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp P &kp R &kp E>;
-      };
-
-      m_con: m_con {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp C &kp O &kp N>;
-      };
-
-      m_should: m_should {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp S &kp H &kp O &kp U &kp L &kp D>;
-      };
-
-      m_could: m_could {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp C &kp O &kp U &kp L &kp D>;
-      };
-
-      m_would: m_would {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp W &kp O &kp U &kp L &kp D>;
-      };
-
-      m_about_: m_about_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp A &kp B &kp O &kp U &kp T &kp SPACE>;
-      };
-
-      m_through: m_through {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp T &kp H &kp R &kp O &kp U &kp G &kp H>;
-      };
-
-      m_people_: m_people_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp P &kp E &kp O &kp P &kp L &kp E &kp SPACE>;
-      };
-
-      m_their_: m_their_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp T &kp H &kp E &kp I &kp R &kp SPACE>;
-      };
-
-      m_which_: m_which_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp W &kp H &kp I &kp C &kp H &kp SPACE>;
-      };
-
-      m_from_: m_from_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp F &kp R &kp O &kp M &kp SPACE>;
-      };
-
-      m_for: m_for {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp F &kp O &kp R>;
-      };
-
-      m_and_: m_and_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp A &kp N &kp D &kp SPACE>;
-      };
-
-      m_the_: m_the_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp T &kp H &kp E &kp SPACE>;
-      };
-
-      m_what_: m_what_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp W &kp H &kp A &kp T &kp SPACE>;
-      };
-
-      m_with: m_with {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp W &kp I &kp T &kp H>;
-      };
-
-      m_ation_: m_ation_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp A &kp T &kp I &kp O &kp N &kp SPACE>;
-      };
-
-      m_ization_: m_ization_ {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <0>;
-        tap-ms = <10>;
-        bindings = <&macro_tap &kp I &kp Z &kp A &kp T &kp I &kp O &kp N &kp SPACE>;
-      };
-
-
+        m_nine: m_nine {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp N9>,
+        };
     };
 
     steno_combos {
-      compatible = "zmk,combos";
-      c_world {
-        timeout-ms = <50>;
-        key-positions = <P_W P_R P_L P_D>;
-        bindings = <&m_world>;
-        layers = <0>;
-      };
+        compatible = "zmk,combos";
+            c_tmux {
+            timeout-ms = <40>;
+            key-positions = <P_RH2 P_COMMA>;
+            bindings = <&m_tmux>;
+            layers = <0>;
+        };
 
-      c_around {
-        timeout-ms = <50>;
-        key-positions = <P_A P_R P_O P_U P_N>;
-        bindings = <&m_around>;
-        layers = <0>;
-      };
+        compatible = "zmk,combos";
+            c_vimpaste {
+            timeout-ms = <40>;
+            key-positions = <P_RH2 P_P>;
+            bindings = <&m_vimpaste>;
+            layers = <0>;
+        };
 
-      c_chang {
-        timeout-ms = <50>;
-        key-positions = <P_C P_H P_N P_G>;
-        bindings = <&m_chang>;
-        layers = <0>;
-      };
+        compatible = "zmk,combos";
+            c_zero {
+            timeout-ms = <40>;
+            key-positions = <P_RH2 P_A>;
+            bindings = <&m_zero>;
+            layers = <0>;
+        };
 
-      c_know {
-        timeout-ms = <50>;
-        key-positions = <P_K P_N P_W>;
-        bindings = <&m_know>;
-        layers = <0>;
-      };
+        compatible = "zmk,combos";
+            c_one {
+            timeout-ms = <40>;
+            key-positions = <P_RH2 P_X>;
+            bindings = <&m_one>;
+            layers = <0>;
+        };
 
-      c_leave {
-        timeout-ms = <50>;
-        key-positions = <P_L P_E P_A P_V>;
-        bindings = <&m_leave>;
-        layers = <0>;
-      };
+        compatible = "zmk,combos";
+            c_two {
+            timeout-ms = <40>;
+            key-positions = <P_RH2 P_C>;
+            bindings = <&m_two>;
+            layers = <0>;
+        };
 
-      c_think {
-        timeout-ms = <50>;
-        key-positions = <P_T P_H P_I P_N P_K>;
-        bindings = <&m_think>;
-        layers = <0>;
-      };
+        compatible = "zmk,combos";
+            c_three {
+            timeout-ms = <40>;
+            key-positions = <P_RH2 P_V>;
+            bindings = <&m_three>;
+            layers = <0>;
+        };
 
-      c_decreas {
-        timeout-ms = <50>;
-        key-positions = <P_D P_E P_C P_G>;
-        bindings = <&m_decreas>;
-        layers = <0>;
-      };
+        compatible = "zmk,combos";
+            c_four {
+            timeout-ms = <40>;
+            key-positions = <P_RH2 P_S>;
+            bindings = <&m_four>;
+            layers = <0>;
+        };
 
-      c_increas {
-        timeout-ms = <50>;
-        key-positions = <P_I P_N P_C P_B>;
-        bindings = <&m_increas>;
-        layers = <0>;
-      };
+        compatible = "zmk,combos";
+            c_five {
+            timeout-ms = <40>;
+            key-positions = <P_RH2 P_D>;
+            bindings = <&m_five>;
+            layers = <0>;
+        };
 
-      c_large {
-        timeout-ms = <50>;
-        key-positions = <P_L P_R P_G>;
-        bindings = <&m_large>;
-        layers = <0>;
-      };
+        compatible = "zmk,combos";
+            c_six {
+            timeout-ms = <40>;
+            key-positions = <P_RH2 P_F>;
+            bindings = <&m_six>;
+            layers = <0>;
+        };
 
-      c_progress {
-        timeout-ms = <50>;
-        key-positions = <P_P P_R P_G P_S>;
-        bindings = <&m_progress>;
-        layers = <0>;
-      };
+        compatible = "zmk,combos";
+            c_seven {
+            timeout-ms = <40>;
+            key-positions = <P_RH2 P_W>;
+            bindings = <&m_seven>;
+            layers = <0>;
+        };
 
-      c_program {
-        timeout-ms = <50>;
-        key-positions = <P_P P_R P_G>;
-        bindings = <&m_program>;
-        layers = <0>;
-      };
+        compatible = "zmk,combos";
+            c_eight {
+            timeout-ms = <40>;
+            key-positions = <P_RH2 P_E>;
+            bindings = <&m_eight>;
+            layers = <0>;
+        };
 
-      c_follow {
-        timeout-ms = <50>;
-        key-positions = <P_F P_O P_L>;
-        bindings = <&m_follow>;
-        layers = <0>;
-      };
-
-      c_genera {
-        timeout-ms = <50>;
-        key-positions = <P_G P_E P_N>;
-        bindings = <&m_genera>;
-        layers = <0>;
-      };
-
-      c_consider {
-        timeout-ms = <50>;
-        key-positions = <P_C P_O P_N P_S>;
-        bindings = <&m_consider>;
-        layers = <0>;
-      };
-
-      c_public {
-        timeout-ms = <50>;
-        key-positions = <P_P P_U P_B>;
-        bindings = <&m_public>;
-        layers = <0>;
-      };
-
-      c_another_ {
-        timeout-ms = <50>;
-        key-positions = <P_A P_N P_O P_T P_R P_SEMI>;
-        bindings = <&m_another_>;
-        layers = <0>;
-      };
-
-      c_however_ {
-        timeout-ms = <50>;
-        key-positions = <P_H P_O P_W P_E P_V P_SEMI>;
-        bindings = <&m_however_>;
-        layers = <0>;
-      };
-
-      c_like {
-        timeout-ms = <50>;
-        key-positions = <P_L P_I P_K P_E>;
-        bindings = <&m_like>;
-        layers = <0>;
-      };
-
-      c_school {
-        timeout-ms = <50>;
-        key-positions = <P_S P_C P_H P_O P_L>;
-        bindings = <&m_school>;
-        layers = <0>;
-      };
-
-      c_against_ {
-        timeout-ms = <50>;
-        key-positions = <P_A P_G P_I P_S P_SEMI>;
-        bindings = <&m_against_>;
-        layers = <0>;
-      };
-
-      c_professor_ {
-        timeout-ms = <50>;
-        key-positions = <P_P P_R P_O P_F P_E>;
-        bindings = <&m_professor_>;
-        layers = <0>;
-      };
-
-      c_professional {
-        timeout-ms = <50>;
-        key-positions = <P_P P_R P_O P_F>;
-        bindings = <&m_professional>;
-        layers = <0>;
-      };
-
-      c_information {
-        timeout-ms = <50>;
-        key-positions = <P_I P_N P_F P_O>;
-        bindings = <&m_information>;
-        layers = <0>;
-      };
-
-      c_experience {
-        timeout-ms = <50>;
-        key-positions = <P_X P_P>;
-        bindings = <&m_experience>;
-        layers = <0>;
-      };
-
-      c_because_ {
-        timeout-ms = <50>;
-        key-positions = <P_B P_E P_SEMI>;
-        bindings = <&m_because_>;
-        layers = <0>;
-      };
-
-      c_development {
-        timeout-ms = <50>;
-        key-positions = <P_D P_E P_V>;
-        bindings = <&m_development>;
-        layers = <0>;
-      };
-
-      c_govern {
-        timeout-ms = <50>;
-        key-positions = <P_G P_O P_V>;
-        bindings = <&m_govern>;
-        layers = <0>;
-      };
-
-      c_government_ {
-        timeout-ms = <50>;
-        key-positions = <P_G P_O P_V P_SEMI>;
-        bindings = <&m_government_>;
-        layers = <0>;
-      };
-
-      c_example {
-        timeout-ms = <50>;
-        key-positions = <P_E P_X P_M P_P P_L>;
-        bindings = <&m_example>;
-        layers = <0>;
-      };
-
-      c_important {
-        timeout-ms = <50>;
-        key-positions = <P_I P_M P_P P_T>;
-        bindings = <&m_important>;
-        layers = <0>;
-      };
-
-      c_difference_ {
-        timeout-ms = <50>;
-        key-positions = <P_D P_I P_F P_S>;
-        bindings = <&m_difference_>;
-        layers = <0>;
-      };
-
-      c_different_ {
-        timeout-ms = <50>;
-        key-positions = <P_D P_I P_F>;
-        bindings = <&m_different_>;
-        layers = <0>;
-      };
-
-      c_between_ {
-        timeout-ms = <50>;
-        key-positions = <P_B P_T P_W P_N>;
-        bindings = <&m_between_>;
-        layers = <0>;
-      };
-
-      c_ous {
-        timeout-ms = <50>;
-        key-positions = <P_S P_DOT>;
-        bindings = <&m_ous>;
-        layers = <0>;
-      };
-
-      c_ment {
-        timeout-ms = <50>;
-        key-positions = <P_M P_N P_T P_DOT>;
-        bindings = <&m_ment>;
-        layers = <0>;
-      };
-
-      c_ing {
-        timeout-ms = <50>;
-        key-positions = <P_N P_G P_DOT>;
-        bindings = <&m_ing>;
-        layers = <0>;
-      };
-
-      c_ness {
-        timeout-ms = <50>;
-        key-positions = <P_N P_S P_DOT>;
-        bindings = <&m_ness>;
-        layers = <0>;
-      };
-
-      c_post {
-        timeout-ms = <50>;
-        key-positions = <P_P P_O P_COMMA>;
-        bindings = <&m_post>;
-        layers = <0>;
-      };
-
-      c_pre {
-        timeout-ms = <50>;
-        key-positions = <P_P P_COMMA>;
-        bindings = <&m_pre>;
-        layers = <0>;
-      };
-
-      c_con {
-        timeout-ms = <50>;
-        key-positions = <P_C P_COMMA>;
-        bindings = <&m_con>;
-        layers = <0>;
-      };
-
-      c_should {
-        timeout-ms = <50>;
-        key-positions = <P_S P_H P_U P_D>;
-        bindings = <&m_should>;
-        layers = <0>;
-      };
-
-      c_could {
-        timeout-ms = <50>;
-        key-positions = <P_C P_U P_D>;
-        bindings = <&m_could>;
-        layers = <0>;
-      };
-
-      c_would {
-        timeout-ms = <50>;
-        key-positions = <P_W P_U P_D>;
-        bindings = <&m_would>;
-        layers = <0>;
-      };
-
-      c_about_ {
-        timeout-ms = <50>;
-        key-positions = <P_A P_B P_T P_SEMI>;
-        bindings = <&m_about_>;
-        layers = <0>;
-      };
-
-      c_through {
-        timeout-ms = <50>;
-        key-positions = <P_T P_H P_R P_U>;
-        bindings = <&m_through>;
-        layers = <0>;
-      };
-
-      c_people_ {
-        timeout-ms = <50>;
-        key-positions = <P_P P_E P_O P_L P_SEMI>;
-        bindings = <&m_people_>;
-        layers = <0>;
-      };
-
-      c_their_ {
-        timeout-ms = <50>;
-        key-positions = <P_T P_H P_I P_SEMI>;
-        bindings = <&m_their_>;
-        layers = <0>;
-      };
-
-      c_which_ {
-        timeout-ms = <50>;
-        key-positions = <P_W P_H P_I P_SEMI>;
-        bindings = <&m_which_>;
-        layers = <0>;
-      };
-
-      c_from_ {
-        timeout-ms = <50>;
-        key-positions = <P_F P_M P_SEMI>;
-        bindings = <&m_from_>;
-        layers = <0>;
-      };
-
-      c_for {
-        timeout-ms = <50>;
-        key-positions = <P_F P_R P_SEMI>;
-        bindings = <&m_for>;
-        layers = <0>;
-      };
-
-      c_and_ {
-        timeout-ms = <50>;
-        key-positions = <P_A P_SEMI>;
-        bindings = <&m_and_>;
-        layers = <0>;
-      };
-
-      c_the_ {
-        timeout-ms = <50>;
-        key-positions = <P_T P_SEMI>;
-        bindings = <&m_the_>;
-        layers = <0>;
-      };
-
-      c_what_ {
-        timeout-ms = <50>;
-        key-positions = <P_W P_H P_A P_SEMI>;
-        bindings = <&m_what_>;
-        layers = <0>;
-      };
-
-      c_with {
-        timeout-ms = <50>;
-        key-positions = <P_W P_I P_T P_H>;
-        bindings = <&m_with>;
-        layers = <0>;
-      };
-
-      c_ation_ {
-        timeout-ms = <50>;
-        key-positions = <P_A P_T P_N P_DOT>;
-        bindings = <&m_ation_>;
-        layers = <0>;
-      };
-
-      c_ization_ {
-        timeout-ms = <50>;
-        key-positions = <P_I P_Z P_A P_DOT>;
-        bindings = <&m_ization_>;
-        layers = <0>;
-      };
-
+        compatible = "zmk,combos";
+            c_nine {
+            timeout-ms = <40>;
+            key-positions = <P_RH2 P_R>;
+            bindings = <&m_nine>;
+            layers = <0>;
+        };
   
     };
 };
