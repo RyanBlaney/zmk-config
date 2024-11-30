@@ -10,7 +10,7 @@
             bindings = 
                 <&macro_press &kp LCTRL>,
                 <&macro_tap &kp B>,
-                <&macro_press &kp LCTRL>;
+                <&macro_release &kp LCTRL>;
         };
 
         m_vimpaste: m_vimpaste {
