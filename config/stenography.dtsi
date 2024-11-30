@@ -10,7 +10,7 @@
             bindings = 
                 <&macro_press &kp LCTRL>,
                 <&macro_tap &kp B>,
-                <&macro_press &kp LCTRL>,
+                <&macro_press &kp LCTRL>;
         };
 
         m_vimpaste: m_vimpaste {
@@ -19,7 +19,7 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = 
-                <&macro_tap &kp ESC &kp P>,
+                <&macro_tap &kp ESC &kp P>;
         };
 
         m_zero: m_zero {
@@ -28,7 +28,7 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = 
-                <&macro_tap &kp N0>,
+                <&macro_tap &kp N0>;
         };
 
         m_one: m_one {
@@ -37,7 +37,7 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = 
-                <&macro_tap &kp N1>,
+                <&macro_tap &kp N1>;
         };
 
         m_two: m_two {
@@ -46,7 +46,7 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = 
-                <&macro_tap &kp N2>,
+                <&macro_tap &kp N2>;
         };
 
         m_three: m_three {
@@ -55,7 +55,7 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = 
-                <&macro_tap &kp N3>,
+                <&macro_tap &kp N3>;
         };
 
         m_four: m_four {
@@ -64,7 +64,7 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = 
-                <&macro_tap &kp N4>,
+                <&macro_tap &kp N4>;
         };
 
         m_five: m_five {
@@ -73,7 +73,7 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = 
-                <&macro_tap &kp N5>,
+                <&macro_tap &kp N5>;
         };
 
         m_six: m_six {
@@ -82,7 +82,7 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = 
-                <&macro_tap &kp N6>,
+                <&macro_tap &kp N6>;
         };
 
         m_seven: m_seven {
@@ -91,7 +91,7 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = 
-                <&macro_tap &kp N7>,
+                <&macro_tap &kp N7>;
         };
 
         m_eight: m_eight {
@@ -100,7 +100,7 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = 
-                <&macro_tap &kp N8>,
+                <&macro_tap &kp N8>;
         };
 
         m_nine: m_nine {
@@ -109,7 +109,7 @@
             wait-ms = <0>;
             tap-ms = <10>;
             bindings = 
-                <&macro_tap &kp N9>,
+                <&macro_tap &kp N9>;
         };
     };
 
