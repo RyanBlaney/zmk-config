@@ -111,6 +111,107 @@
             bindings = 
                 <&macro_tap &kp N9>;
         };
+
+        m_excl: m_excl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &kp EXCL>;
+        };
+
+        m_at: m_at {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &kp AT>;
+        };
+
+        m_hash: m_hash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &kp HASH>;
+        };
+
+        m_dllr: m_dllr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &kp DLLR>;
+        };
+
+        m_prcnt: m_prcnt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &kp PRCNT>;
+        };
+
+        m_caret: m_caret {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &kp CARET>;
+        };
+
+        m_amps: m_amps {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp AMPS>;
+        };
+
+        m_astrk: m_astrk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp ASTRK>;
+        };
+
+        m_cap_a: m_cap_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp A>,
+                <&macro_release &kp LSHFT>;
+        };
+
+        m_dqt: m_dqt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp DQT>;
+        };
+
+        m_semi: m_semi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp SEMI>;
+        };
     };
 
     steno_combos {
@@ -209,6 +310,93 @@
             bindings = <&m_nine>;
             layers = <0>;
         };
-  
+
+        compatible = "zmk,combos";
+            c_excl {
+            timeout-ms = <40>;
+            key-positions = <P_LH1 P_X>;
+            bindings = <&m_excl>;
+            layers = <0>;
+        };
+
+        compatible = "zmk,combos";
+            c_at {
+            timeout-ms = <40>;
+            key-positions = <P_LH1 P_C>;
+            bindings = <&m_at>;
+            layers = <0>;
+        };
+
+        compatible = "zmk,combos";
+            c_hash {
+            timeout-ms = <40>;
+            key-positions = <P_LH1 P_V>;
+            bindings = <&m_hash>;
+            layers = <0>;
+        };
+
+        compatible = "zmk,combos";
+            c_dllr {
+            timeout-ms = <40>;
+            key-positions = <P_LH1 P_S>;
+            bindings = <&m_dllr>;
+            layers = <0>;
+        };
+
+        compatible = "zmk,combos";
+            c_prcnt {
+            timeout-ms = <40>;
+            key-positions = <P_LH1 P_D>;
+            bindings = <&m_prcnt>;
+            layers = <0>;
+        };
+
+        compatible = "zmk,combos";
+            c_caret {
+            timeout-ms = <40>;
+            key-positions = <P_LH1 P_F>;
+            bindings = <&m_caret>;
+            layers = <0>;
+        };
+
+        compatible = "zmk,combos";
+            c_amps {
+            timeout-ms = <40>;
+            key-positions = <P_LH1 P_W>;
+            bindings = <&m_amps>;
+            layers = <0>;
+        };
+
+        compatible = "zmk,combos";
+            c_astrk {
+            timeout-ms = <40>;
+            key-positions = <P_LH1 P_E>;
+            bindings = <&m_astrk>;
+            layers = <0>;
+        };
+
+        compatible = "zmk,combos";
+            c_cap_a {
+            timeout-ms = <40>;
+            key-positions = <P_A P_Q>;
+            bindings = <&m_cap_a>;
+            layers = <0>;
+        };
+
+        compatible = "zmk,combos";
+            c_dqt {
+            timeout-ms = <40>;
+            key-positions = <P_SEMI P_P>;
+            bindings = <&m_dqt>;
+            layers = <0>;
+        };
+
+        compatible = "zmk,combos";
+            c_semi {
+            timeout-ms = <40>;
+            key-positions = <P_SEMI P_RH2>;
+            bindings = <&m_semi>;
+            layers = <0>;
+        };
     };
 };
