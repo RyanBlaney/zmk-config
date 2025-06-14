@@ -212,6 +212,15 @@
             bindings = 
                 <&macro_tap &kp SEMI>;
         };
+
+        m_colon: m_colon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings = 
+                <&macro_tap &kp COLON>;
+        };
     };
 
     steno_combos {
@@ -396,6 +405,14 @@
             timeout-ms = <40>;
             key-positions = <P_SEMI P_RH2>;
             bindings = <&m_semi>;
+            layers = <0>;
+        };
+
+        compatible = "zmk,combos";
+            c_colon {
+            timeout-ms = <40>;
+            key-positions = <P_P P_RH2>;
+            bindings = <&m_colon>;
             layers = <0>;
         };
     };
