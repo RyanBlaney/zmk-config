@@ -6,8 +6,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-// NOTE: Temporarily removed mouse.dtsi due to compilation errors
-// #include "mouse.dtsi"
+#include "mouse.dtsi"
 #include "emojis.dtsi"
 #include "stenography.dtsi"
 
@@ -165,13 +164,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp Q      &kp W      &kp E      &kp R      &kp T          &trans     &kp LCLK   &trans     &kp RCLK   &trans
+           &kp Q      &kp W      &kp E      &kp R      &kp T          U_WH_L     &mkp LCLK  U_WH_U     &mkp RCLK  U_WH_R
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp A      &kp S      &kp D      &kp F      &kp LCLK       &trans     &kp LARW   &kp DARW   &kp UARW   &kp RARW 
+           &kp A      &kp S      &kp D      &kp F      &mkp LCLK      &mkp MCLK  U_MS_L     U_MS_D     U_MS_U     U_MS_R 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-          &ht LSHFT Z &ht LALT X &ht LCTRL C &kp TAB   &kp ESC       &trans     &kp RCLK   &trans     &kp LCLK   &lt MOUSE_NUM ESC
+          &ht LSHFT Z &ht LALT X &ht LCTRL C &kp TAB   &kp ESC       &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &lt MOUSE_NUM ESC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &tog MOUSE &kp SPACE      &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -199,13 +198,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp N7      &kp W     &kp N8     &kp N9     &kp D          &trans     &kp LCLK   &trans     &kp RCLK   &trans
+           &kp N7      &kp W     &kp N8     &kp N9     &kp D          U_WH_L     &mkp LCLK  U_WH_U     &mkp RCLK  U_WH_R
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp A      &kp N4     &kp N5     &kp N6     &kp LCLK       &trans     &kp LARW   &kp DARW   &kp UARW   &kp RARW 
+           &kp A      &kp N4     &kp N5     &kp N6     &mkp LCLK      &mkp MCLK  U_MS_L     U_MS_D     U_MS_U     U_MS_R 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-         &ht LSHFT Z &META LALT N1 &META LCTRL N2 &META LGUI N3 &kp RCLK   &trans     &kp RCLK   &trans     &kp LCLK   &trans
+         &ht LSHFT Z &ht LALT N1 &ht LCTRL N2 &ht LGUI N3 &mkp RCLK   &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         &tog MOUSE &kp SPACE      &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
