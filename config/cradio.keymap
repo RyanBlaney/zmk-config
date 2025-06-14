@@ -11,17 +11,17 @@
 #include "stenography.dtsi"
 
 // BLUETOOTH PROFILE-BASED OS ADAPTATION
-// Profile 0: macOS (Cmd on middle finger) 
+// Profile 0: macOS (Cmd on middle finger)
 // Profile 1: Linux (Ctrl on middle finger)
 // Profile 2: Available for third device
 
-// Home row mods - Linux/Windows layout (default)
-#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
-#define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+// Original home row mods macro (Linux/Windows style)
+#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &META LALT k2  &META LCTRL k3  &META LGUI k4
+#define HRMR(k1,k2,k3,k4) &META RGUI k1  &META RCTRL k2  &META RALT k3  &ht RSHFT k4
 
-// Home row mods - macOS layout (Cmd on middle finger)
-#define HRML_MAC(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LGUI k3  &ht LCTRL k4
-#define HRMR_MAC(k1,k2,k3,k4) &ht RCTRL k1  &ht RGUI k2  &ht RALT k3  &ht RSHFT k4
+// macOS-style home row mods (Cmd on middle finger)
+#define HRML_MAC(k1,k2,k3,k4) &ht LSHFT k1  &META LALT k2  &META LGUI k3  &META LCTRL k4
+#define HRMR_MAC(k1,k2,k3,k4) &META RCTRL k1  &META RGUI k2  &META RALT k3  &ht RSHFT k4
 
 #define DEFAULT 0
 #define NUMBER 1
@@ -67,7 +67,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        // Smart Bluetooth selector that switches to appropriate base layer
+        // Bluetooth profile selectors with automatic layer switching
         bt_mac: bt_mac_profile {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -90,15 +90,14 @@
     keymap {
         compatible = "zmk,keymap";
         
-        // DEFAULT LAYER - Standard Linux/Windows layout
-        default_layer {
+        // DEFAULT LAYER - Same as original
+        qwerty_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
-        //│ Shift    │ Alt      │ Ctrl     │ Super    │          │   │          │ Super    │ Ctrl     │ Alt      │ Shift    │
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ ESCAPE   │ REPEAT   │ / ?      │
@@ -143,7 +142,8 @@
             >;
         };
 
-        bluetooth_layer {
+        // Modified Bluetooth layer with OS profile switching
+        tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │          │          │          │BT 0 macOS│   │ BACKWARD │ PREVIOUS │PLAY/PAUSE│ NEXT     │ FORWARD  │
@@ -204,7 +204,7 @@
            &kp A      &kp N4     &kp N5     &kp N6     &mkp LCLK      &mkp MCLK  U_MS_L     U_MS_D     U_MS_U     U_MS_R 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-         &ht LSHFT Z &ht LALT N1 &ht LCTRL N2 &ht LGUI N3 &mkp RCLK   &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &trans
+         &ht LSHFT Z &META LALT N1 &META LCTRL N2 &META LGUI N3 &mkp RCLK   &mkp MB4   &mkp RCLK  U_WH_D     &mkp LCLK  &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         &tog MOUSE &kp SPACE      &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -264,7 +264,7 @@
             >; 
         };
 
-        // Linux-optimized layer (Profile 1)
+        // Linux-optimized layer (Profile 1) - identical to default
         linux_base_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
